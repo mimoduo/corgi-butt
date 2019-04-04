@@ -1,0 +1,61 @@
+/* ==========================================================================
+	Breadcrumb Navigation
+============================================================================= */
+
+.breadcrumb_nav {
+	display: none;
+
+	@media #{$min_lg} {
+		display: block;
+	}
+}
+
+.breadcrumb_nav_header {
+	@include visually_hide;
+}
+
+.breadcrumb_nav_title {}
+
+
+/* Breadcrumb Links
+============================================================================= */
+
+.breadcrumb_list {
+	list-style: none;
+	margin: 0;
+	overflow-x: auto;
+	overflow-y: hidden;
+	padding: 0;
+	white-space: nowrap;
+}
+
+.breadcrumb_item {
+	display: inline-block;
+
+	&:after {
+		content: "/";
+	}
+
+	&:last-child {
+
+		&:after {
+			opacity: 0;
+			visibility: hidden;
+		}
+	}
+}
+
+.breadcrumb_pill {
+	display: inline-block;
+}
+
+.breadcrumb_pill_link {
+	color: inherit;
+
+	&:focus,
+	&:hover {}
+}
+
+.breadcrumb_pill_icon {}
+
+.breadcrumb_pill_label {}

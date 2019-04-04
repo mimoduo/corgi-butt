@@ -1,0 +1,82 @@
+/* ==========================================================================
+	Page
+============================================================================= */
+
+.page_wrapper {
+	width: 100%;
+	min-height: 100vh;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.page {
+	flex-grow: 1;
+
+	.page_layout_default & {
+		@include padded_xl_top;
+	}
+}
+
+.page_feature {}
+
+.page_content {
+
+	> .fs-row {
+		@include clearfix;
+
+		display: block;
+	}
+}
+
+.page_aside {
+
+	@media #{$min_lg} {
+		float: right;
+	}
+}
+
+.page_sub_nav {}
+
+.page_main_content {
+	@include focus_outline_none;
+	@include padded_xl_bottom;
+
+	display: block;
+
+	@media #{$min_lg} {
+		float: left;
+	}
+
+	.page_layout_full & {
+
+		@media #{$min_lg} {
+			float: none;
+		}
+	}
+}
+
+.page_header {}
+
+.page_title {
+	@include h3;
+
+	align-items: center;
+	display: flex;
+	margin: 0 0 10px;
+}
+
+.page_title_icon {
+	color: rgba($orange, .5);
+	margin-right: 10px;
+}
+
+.page_intro {
+	@include intro_text;
+	
+	margin: 0;
+}
+
+.page_sidebar {
+	clear: right;
+}

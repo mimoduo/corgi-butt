@@ -1,0 +1,27 @@
+// Fonts
+// =============================================================================
+
+@mixin font-face($name, $list) {
+
+	@each $file, $weight, $style in $list {
+		@font-face {
+			font-family: $name;
+			src: url("../fonts/#{$file}.otf");
+			font-weight: $weight;
+
+			@if $style {
+				font-style: $style;
+			}
+		}
+	}
+}
+
+@mixin title() {
+	font-family: "Permanent Marker", sans-serif;
+	font-weight: 400;
+}
+
+@mixin sans() {
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+}

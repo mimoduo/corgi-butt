@@ -1,0 +1,17 @@
+# {{ name }}
+> {{ description }}
+
+## Quickstart
+
+```sh
+npm install gulp-cli -g
+npm install
+npm link trello-module
+gulp
+```
+
+## Project Links
+
+{% for link in urls %}
+* [{{ link.name }}]({{ link.url }})
+{% endfor %}

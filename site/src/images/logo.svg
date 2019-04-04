@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="360px" height="227px" viewBox="0 0 360 227" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="50%" cy="64.8587302%" fx="50%" fy="64.8587302%" r="100%" gradientTransform="translate(0.500000,0.648587),scale(0.371508,1.000000),rotate(90.000000),translate(-0.500000,-0.648587)" id="radialGradient-1">
+            <stop stop-color="#C07700" offset="0%"></stop>
+            <stop stop-color="#E58E00" offset="100%"></stop>
+        </radialGradient>
+        <radialGradient cx="50%" cy="97.4623643%" fx="50%" fy="97.4623643%" r="100%" gradientTransform="translate(0.500000,0.974624),scale(0.475000,1.000000),rotate(90.000000),scale(1.000000,1.664055),translate(-0.500000,-0.974624)" id="radialGradient-2">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FF9E00" offset="100%"></stop>
+        </radialGradient>
+        <radialGradient cx="50%" cy="97.5600205%" fx="50%" fy="97.5600205%" r="99.9023437%" gradientTransform="translate(0.500000,0.975600),rotate(90.000000),scale(1.000000,1.664055),translate(-0.500000,-0.975600)" id="radialGradient-3">
+            <stop stop-color="#FFFFFF" offset="0.09765625%"></stop>
+            <stop stop-color="#FF9E00" offset="32.2899071%"></stop>
+            <stop stop-color="#AB6A00" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="✅-All-Temps" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Logo" transform="translate(0.000000, 0.004953)">
+            <path d="M1,133 C20.420451,44.3333333 80.0871177,7.50270573e-14 180,0 C279.912882,-7.87518199e-14 339.579549,44.3333333 359,133 L1,133 Z" id="Body" fill="url(#radialGradient-1)"></path>
+            <path d="M180,103.269381 C195.592801,75.2390577 227.799356,55.9950468 265,55.9950468 C317.467051,55.9950468 360,94.2747007 360,141.495047 C360,188.715393 317.467051,226.995047 265,226.995047 C227.799356,226.995047 195.592801,207.751036 180,179.720713 C164.407199,207.751036 132.200644,226.995047 95,226.995047 C42.5329488,226.995047 0,188.715393 0,141.495047 C0,94.2747007 42.5329488,55.9950468 95,55.9950468 C132.200644,55.9950468 164.407199,75.2390577 180,103.269381 Z" id="Butt" fill="url(#radialGradient-2)"></path>
+            <circle id="Tail" fill="url(#radialGradient-3)" cx="179" cy="73.9950468" r="33"></circle>
+        </g>
+    </g>
+</svg>

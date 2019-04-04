@@ -1,0 +1,82 @@
+/* ==========================================================================
+	Meta
+============================================================================= */
+
+.meta {
+	text-align: center;
+}
+
+.meta_logo {}
+
+.meta_logo_link {
+	color: inherit;
+}
+
+.meta_logo_label {
+	@include h2;
+}
+
+.meta_logo_icon {}
+
+
+/* Details
+============================================================================= */
+
+.meta_details {
+	display: inline-block;
+
+	@media #{$min_md} {
+		display: flex;
+		justify-content: center;
+	}
+}
+
+.meta_detail {
+	align-items: center;
+	display: flex;
+	margin-bottom: 10px;
+
+	@media #{$min_md} {
+		margin: 0 20px;
+	}
+
+	@media #{$min_lg} {
+		margin: 0 30px;
+	}
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.meta_detail_address {}
+
+.meta_detail_icon {
+	width: 20px;
+	
+  display: flex;
+  justify-content: center;
+  margin-right: 5px;
+}
+
+.meta_detail_label {
+	color: inherit;
+}
+
+.meta_detail_label_address {}
+
+.meta_detail_address_street {}
+
+.meta_detail_address_group {}
+
+.meta_detail_address_city {}
+
+.meta_detail_address_state {}
+
+.meta_detail_address_zip {}
+
+.meta_detail_label_email {}
+
+.meta_detail_label_phone {}
+
+.meta_detail_label_fax {}

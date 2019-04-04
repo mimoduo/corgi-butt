@@ -1,0 +1,16 @@
+{#
+	{% include par ~ "background.twig" with {
+		customClass: "js-class",
+		class: "flex_callout",
+		image: image,
+		sources: {
+			"0px": img.square.sml,
+			"740px": img.ultrawide.med,
+			"980px": img.ultrawide.lrg,
+			"1220px": img.ultrawide.xlrg
+		}
+	} %}
+#}
+
+<div class="{{ customClass ?: 'js-background' }} {{ class }}_background" data-background-options='{"source": {
+{% for key, source in sources %}"{{ key }}": "{% if source == "placeholder" %}../../images/placeholder.png{% else %}//images.fastspot.com/{{ vars.images }}/{{ source }}/{{ image }}{% endif %}"{% if not loop.last %}, {% endif %}{% endfor %}}, "lazy": true}' aria-hidden="true"></div>

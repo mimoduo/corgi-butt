@@ -1,0 +1,47 @@
+{% extends "_base.twig" %}
+
+{% block page %}
+	{% set page = {
+		metaImage: "/images/temp/social-wide.jpg",
+		metaImageWidth: "1220",
+		metaImageHeight: "686",
+		metaCard: "summary_large_image",
+		title: "About",
+		intro: "We're a small team of two dedicated to making the Maryland website landscape a rewarding place for our community and an engaging environment for our clients.",
+		layout: "default"
+	} %}
+{% endblock %}
+
+{% block typography %}
+{% endblock %}
+
+{% block in_content_callouts %}
+{% endblock %}
+
+{% block sidebar %}
+{% endblock %}
+
+{% block full_width_callouts %}
+  {% include full ~ "directory.twig" with {
+    items: [
+      {
+        image: 1,
+        name: "Bryan Stoner",
+        title: "Founder, Designer, Developer",
+        description: "Ever since I was a kid I drew crazy monsters, robot fortresses, and comic book characters. I'd even get myself into some sweet lego, kinect, and gundam model kits. Building websites stuck like crazy, just as my pasttimes did, when I started my career 7 years ago."
+      },
+      {
+        image: 2,
+        name: "Brandon Choi",
+        title: "Developer",
+        description: "Ever since I was a kid i was into martial arts, videogames, and superheroes. I received my black belt in Taekwondo during high school and my black belt in Jujitsu in college. I graduated from UMBC in mechanical engineering and I've been studying web development for the past couple of years."
+      },
+      {
+        image: 3,
+        name: "Curry",
+        title: "Champion Corgi",
+        description: "I am the ruler of all the fur in the world. Fluff master at heart, goofball deep down. I like to eat Bryan's socks, run around in circles, and swipe any popcorn that hits the floor."
+      }
+    ]
+  } %}
+{% endblock %}

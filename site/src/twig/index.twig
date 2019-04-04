@@ -1,0 +1,62 @@
+{% extends "templates/_ref.twig" %}
+
+{% block data %}
+	{% if accessibility %}
+		{% set page = {
+			tabTitle: "Accessibility Report"
+		} %}
+	{% else %}
+		{% set page = {
+			tabTitle: "Sitemap"
+		} %}
+	{% endif %}
+{% endblock %}
+
+{% block main %}
+	<ul class="sitemap">
+		{% for link in sitemap %}
+		<li class="sitemap_item{% if 'fs' in link %} sitemap_item_style_guide{% elseif 'dev' in link %} sitemap_item_dev{% elseif 'page' in link %} sitemap_item_page{% elseif 'accessibility' in link %} sitemap_item_access{% endif %}">
+			<a class="sitemap_link" href="{% if accessibility %}../accessibility{% else %}templates{% endif %}{{ link }}">{{ link|replace({
+				".html": "",
+				"-": " ",
+				"/": "",
+				"fs": "",
+				"dev": "",
+				"page": ""
+			}) }}</a>
+		</li>
+		{% endfor %}
+	</ul>
+	{% if trello == "" %}
+	<style>
+		.sitemap_item_style_guide {
+			display: none;
+		}
+	</style>
+	{% endif %}
+	<script>
+		var sitemap = document.querySelector('.sitemap');
+		var fsAccess = document.querySelectorAll('.sitemap_item_access');
+		var fsDev = document.querySelectorAll('.sitemap_item_dev');
+		var fsGuide = document.querySelectorAll('.sitemap_item_style_guide');
+		var fsPage = document.querySelectorAll('.sitemap_item_page');
+
+		wrap(fsAccess);
+		wrap(fsDev);
+		wrap(fsGuide);
+		wrap(fsPage);
+
+		function wrap(element) {
+			if (element.length > 0) {
+				var group = document.createElement('div');
+				group.classList.add('sitemap_group');
+
+				for(var i = 0; i < element.length; i++) {
+					group.appendChild(element[i]);
+				}
+
+				sitemap.appendChild(group);
+			}
+		}
+	</script>
+{% endblock %}

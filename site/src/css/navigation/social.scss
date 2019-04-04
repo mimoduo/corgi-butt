@@ -1,0 +1,39 @@
+/* ==========================================================================
+	Social Navigation
+============================================================================= */
+
+.social_nav {}
+
+.social_nav_header {}
+
+.social_nav_title {
+	@include visually_hide;
+}
+
+
+/* Social Links
+============================================================================= */
+
+.social_nav_list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.social_nav_item {
+	display: inline-block;
+}
+
+.social_nav_link {
+	color: inherit;
+	display: block;
+
+	&:focus,
+	&:hover {}
+}
+
+.social_nav_icon {}
+
+.social_nav_label {
+	@include visually_hide;
+}

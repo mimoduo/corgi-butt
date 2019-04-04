@@ -1,0 +1,127 @@
+/* ==========================================================================
+	Menu
+============================================================================= */
+
+.menu_handle {
+	height: 40px;
+	width: 40px;
+
+	position: relative;
+
+	background: $orange;
+	border-radius: 50px;
+	display: block;
+	transform: rotate(-8deg);
+
+	@media print {
+		display: none;
+	}
+
+	@media #{$min_lg} {
+		display: none;
+	}
+
+	&:before {
+		height: 10px;
+		width: 10px;
+
+		position: absolute;
+		bottom: 100%;
+		left: 50%;
+
+		background: $orange;
+		border-radius: 50%;
+		box-shadow:
+			-10px 4px 0 -2px $orange,
+			12px 0 0 0 $orange,
+			22px 4px 0 -2px $orange;
+		content: "";
+		margin-bottom: 4px;
+		margin-left: -6px;
+		transform: translate(-50%, 0);
+	}
+}
+
+.menu_handle_icon {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+
+	color: $dark;
+	pointer-events: none;
+	transform: 
+		translate(-50%, -50%)
+		rotate(8deg);
+}
+
+.menu_handle_label {
+	@include visually_hide;
+}
+
+
+/* Menu Body
+============================================================================= */
+
+.menu {
+	@include focus_outline_none;
+
+	width: 100%;
+	max-width: 320px;
+
+	position: relative;
+	top: 0;
+	right: 0;
+	z-index: 400;
+
+	background: #fff;
+	display: block;
+	padding-top: 66px;
+	transition:
+		opacity .35s,
+		transform .35s,
+		visibility .35s;
+
+	@media print {
+		display: none;
+	}
+
+	@media #{$min_lg} {
+		display: none;
+	}
+
+	.js & {
+		@include fake_scroll();
+
+		height: 100%;
+
+		position: fixed;
+
+		opacity: 0;
+		visibility: hidden;
+	}
+
+	&.fs-swap-active {
+		opacity: 1;
+		visibility: visible;
+	}
+}
+
+
+/* Menu Close
+============================================================================= */
+
+.menu_close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+
+	border: 3px solid $orange;
+	display: flex;
+	padding: 10px;
+}
+
+.menu_close_icon {}
+
+.menu_close_label {
+	@include visually_hide;
+}

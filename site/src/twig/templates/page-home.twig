@@ -1,0 +1,57 @@
+{% extends "_base.twig" %}
+
+{% block page %}
+	{% set page = {
+		metaImage: "/images/temp/social-wide.jpg",
+		metaImageWidth: "1220",
+		metaImageHeight: "686",
+		metaCard: "summary_large_image",
+		title: "Home",
+		layout: "home"
+	} %}
+{% endblock %}
+
+{% block full_width_callouts %}
+	{% include full ~ "spotlight.twig" with {
+		video: "",
+		title: "Stronger Websites",
+		description: "Corgi Butt is a small team of two focused on building stronger Maryland websites through our client's engagement, well structured designs, and leading class development practices.",
+		links: [
+			"Your Idea, Our Email"
+		]
+	} %}
+	
+	{% include full ~ "timeline.twig" with {
+		title: "How We Work With You",
+		caption: "Creating a website is a big undertaking and often misunderstood being. To make it less daunting, we work with you, step by step, for us to roll forward with a website you can be proud of.",
+		label: "The Beginning",
+		items: [
+			{
+				image: 1,
+				title: "We Chat",
+				caption: "The first step is getting to know you and us! During our chat, we'll listen to your ideas and turn them into an actionable plan - whether that's a simple design refresh or a completely new site."
+			},
+			{
+				image: 2,
+				title: "We Design",
+				caption: "With a project plan on paper, we design a website that captures the best parts of your brand and embodies a thoughtful approach to user interfaces. We live in a digital age so feel free to suggest some tweaks here!"
+			},
+			{
+				image: 3,
+				title: "We Develop",
+				caption: "We tailor every inch of your new design for any screen imaginable across the web. We consider smooth performance, usability, accessibility, and search engine optimization to be the paramount of web development and user engagement."
+			},
+			{
+				image: 4,
+				title: "We Integrate",
+				caption: "A <em>completely optional</em> step but a wise one if you want to be able to manage your own content. We hop to it and integrate your website into <a href='https://www.bigtreecms.org/' target='_blank'>Bigtree Content Management System</a>, an easy to use powerhouse of a CMS."
+			},
+			{
+				image: 5,
+				title: "We Host",
+				caption: "Your site has to live somewhere, right? Whether you're currently hosting your website or have yet to host a website, we'll work with you to get your site up and running."
+			}
+		],
+		end: "Your New Website has Launched 🚀"
+	} %}
+{% endblock %}

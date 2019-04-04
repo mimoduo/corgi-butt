@@ -1,0 +1,22 @@
+[
+    {
+        "id": "1",
+        "name": "Full Width",
+        "callouts": []
+    },
+    {
+        "id": "2",
+        "name": "In Content",
+        "callouts": []
+    },
+    {
+        "id": "3",
+        "name": "Sidebar",
+        "callouts": null
+    },
+    {
+        "id": "4",
+        "name": "Home",
+        "callouts": null
+    }
+]

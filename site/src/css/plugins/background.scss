@@ -1,0 +1,74 @@
+/* ==========================================================================
+	Background
+============================================================================= */
+
+.fs-background-container {
+	opacity: 0;
+	transition: opacity .3s;
+
+	.fs-background-loaded & {
+		opacity: 1;
+	}
+}
+
+.fs-background-controls-block {
+	@include fake_padded;
+
+	position: absolute;
+	bottom: 30px;
+	left: 0;
+	z-index: 4;
+
+	display: none;
+
+	@media #{$min_lg} {
+		display: block;
+	}
+}
+
+.fs-background-controls {
+	position: relative;
+	
+	height: 32px;
+	width: 32px;
+}
+
+.fs-background-control {
+	height: 100%;
+	width: 100%;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	border: 2px solid rgba($orange, .75);
+	border-radius: 50%;
+	color: rgba(#fff, .75);
+	opacity: 1;
+	visibility: visible;
+	transition:
+		opacity .25s,
+		visibility .25s;
+
+	&.fs-background-control-active {
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+
+.fs-background-control-icon {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+
+	display: block;
+	transform: translate(-50%, -50%);
+
+	.fs-background-control-play & {
+		margin-left: 2px;
+	}
+}
+
+.fs-background-control-label {
+	@include visually_hide;
+}

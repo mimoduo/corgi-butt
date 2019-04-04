@@ -1,0 +1,47 @@
+<div class="directory">
+	<div class="fs-row">
+		<div class="fs-cell">
+			<div class="directory_inner">
+				<div class="directory_body">
+					<ul class="directory_items" role="list" itemscope itemtype="http://schema.org/ItemList"{% if title %} aria-label="{{ title }}"{% endif %}>
+						{% for item in items %}
+						<li class="directory_item" itemscope itemprop="itemListElement" itemtype="http://schema.org/ListItem">
+							<meta itemprop="position" content="{{ loop.index }}">
+							<div class="directory_item_inner" itemscope itemtype="http://schema.org/Person">
+								{% if item.image %}
+								<figure class="directory_item_figure">
+									<span class="directory_item_figure_icon">{{ site.icon("paw") }}</span>
+									<a class="directory_item_figure_link" href="#">
+										{% include par ~ "image.twig" with {
+											class: "directory_item",
+											image: item.image,
+											dimension: img.square.xsml,
+											itemprop: ""
+										} %}
+									</a>
+								</figure>
+								{% endif %}
+								<div class="directory_item_content">
+									<header class="directory_item_header">
+										<h3 class="directory_item_name" itemprop="name">{{ item.name }}</h3>
+										{% if item.title %}
+										<div class="directory_item_title">{{ item.title }}</div>
+										{% endif %}
+									</header>
+									<div class="directory_item_body">
+										{% if item.description %}
+										<div class="directory_item_description" itemprop="description">
+											<p>{{ item.description }}</p>
+										</div>
+										{% endif %}
+									</div>
+								</div>
+							</div>
+						</li>
+						{% endfor %}
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

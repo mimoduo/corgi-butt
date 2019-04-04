@@ -1,0 +1,13 @@
+{#
+	{% include side ~ "wysiwyg.twig" with {
+		content: '<p>Lorem ipsum</p>'
+	} %}
+#}
+
+<!-- WYSIWYG -->
+<div class="wysiwyg_block">
+	<div class="typography">
+		{{ content }}
+	</div>
+</div>
+<!-- END: WYSIWYG -->

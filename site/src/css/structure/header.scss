@@ -1,0 +1,65 @@
+/* ==========================================================================
+	Header
+============================================================================= */
+
+.header {
+	background: $lorange;
+	border-bottom: 6px solid $orange;
+	padding: 15px 0;
+
+	@media print {
+		display: none;
+	}
+}
+
+.header_ribbon {}
+
+.header_ribbon_inner {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+}
+
+.header_ribbon_group {
+
+	&:first-child {
+
+		@media #{$min_lg} {
+			align-items: center;
+			display: flex;
+			flex: auto;
+			justify-content: space-between;
+		}
+	}
+	
+	&:last-child {
+		align-items: center;
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+.header_email_link {
+	@include button_fill;
+	@include button_inline;
+
+	margin: 0 20px;
+
+	
+
+	@media #{$min_lg} {
+		background: $orange;
+		border-color: $orange;
+		margin: 0;
+	}
+
+	.header & {
+		@media #{$max_sm} {
+			display: none;
+		}
+	}
+}
+
+.header_email_link_icon {}
+
+.header_email_link_label {}

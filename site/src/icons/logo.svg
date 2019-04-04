@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="549px" height="206px" viewBox="0 0 549 206" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="50%" cy="64.8587302%" fx="50%" fy="64.8587302%" r="100%" gradientTransform="translate(0.500000,0.648587),scale(0.363875,1.000000),rotate(90.000000),translate(-0.500000,-0.648587)" id="radialGradient-1">
+            <stop stop-color="#C07700" offset="0%"></stop>
+            <stop stop-color="#E58E00" offset="100%"></stop>
+        </radialGradient>
+        <radialGradient cx="50%" cy="97.4623643%" fx="50%" fy="97.4623643%" r="100%" gradientTransform="translate(0.500000,0.974624),scale(0.416667,1.000000),rotate(90.000000),scale(1.000000,1.664055),translate(-0.500000,-0.974624)" id="radialGradient-2">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FF9E00" offset="100%"></stop>
+        </radialGradient>
+        <radialGradient cx="50%" cy="97.5600205%" fx="50%" fy="97.5600205%" r="99.9023437%" gradientTransform="translate(0.500000,0.975600),rotate(90.000000),scale(1.000000,1.664055),translate(-0.500000,-0.975600)" id="radialGradient-3">
+            <stop stop-color="#FFFFFF" offset="0.09765625%"></stop>
+            <stop stop-color="#FF9E00" offset="32.2899071%"></stop>
+            <stop stop-color="#AB6A00" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="✅-All-Temps" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Logo" transform="translate(0.000000, 0.004953)">
+            <path d="M0,130.995047 C19.5289451,43.6650156 79.5289451,1.70526179e-14 180,-5.68434189e-14 C280.471055,-1.34408068e-13 340.471055,43.6650156 360,130.995047 L0,130.995047 Z" id="Body" fill="url(#radialGradient-1)"></path>
+            <path d="M180,97.4637608 C195.592801,72.8757582 227.799356,55.9950468 265,55.9950468 C317.467051,55.9950468 360,89.5736906 360,130.995047 C360,172.416403 317.467051,205.995047 265,205.995047 C227.799356,205.995047 195.592801,189.114335 180,164.526333 C164.407199,189.114335 132.200644,205.995047 95,205.995047 C42.5329488,205.995047 0,172.416403 0,130.995047 C0,89.5736906 42.5329488,55.9950468 95,55.9950468 C132.200644,55.9950468 164.407199,72.8757582 180,97.4637608 Z" id="Butt" fill="url(#radialGradient-2)"></path>
+            <circle id="Tail" fill="url(#radialGradient-3)" cx="179" cy="73.9950468" r="33"></circle>
+            <text id="Corgi-Butt-Websites" font-family="PermanentMarker-Regular, Permanent Marker" font-size="50" font-weight="normal" fill="#000000">
+                <tspan x="41" y="151.995047">Corgi Butt Websites</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,48 @@
+<div class="timeline">
+  <div class="fs-row">
+    <div class="fs-cell">
+      <div class="timeline_inner">
+        <div class="timeline_content">
+          <header class="timeline_header">
+            <h2 class="timeline_title">{{ title }}</h2>
+            <p class="timeline_caption">{{ caption }}</p>
+            {{ site.button("timeline", "Work With Us", "mail", "#")}}
+          </header>
+          <div class="timeline_body">
+            <span class="timeline_label">{{ label }}</span>
+            <ol class="timeline_items">
+              {% for item in items %}
+                <li class="timeline_item">
+                  <article class="timeline_item_article">
+                    <figure class="timeline_item_figure">
+                      {% include par ~ "image.twig" with {
+                        class: "timeline_item",
+                        image: item.image,
+                        dimension: img.square.thumb
+                      } %}
+                    </figure>
+                    <div class="timeline_item_body">
+                      <header class="timeline_item_header">
+                        <h3 class="timeline_item_title">
+                          <span class="timeline_item_title_index">{{ loop.index }}.</span>
+                          <span class="timeline_item_title_label">{{ item.title }}</span>
+                        </h3>
+                      </header>
+                      <div class="timeline_item_caption">
+                        {{ item.caption }}
+                      </div>
+                    </div>
+                  </article>
+                </li>
+              {% endfor %}
+            </ol>
+            <span class="timeline_label">{{ end }}</span>
+          </div>
+        </div>
+        <footer class="timeline_footer">
+          {{ site.button("timeline", "Let's Start Your Timeline!", "mail", "#")}}
+        </footer>
+      </div>
+    </div>
+  </div>
+</div>

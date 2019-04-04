@@ -1,0 +1,32 @@
+/* ==========================================================================
+	Footer
+============================================================================= */
+
+.footer {
+	background: $orange;
+	padding: 40px 0;
+
+	@media print {
+		display: none;
+	}
+}
+
+.footer_ribbon {}
+
+.footer_ribbon_inner {}
+
+.footer_group {}
+
+
+/* Copyright
+============================================================================= */
+
+.copyright {
+	margin: 0;
+}
+
+.copyright_icon {}
+
+.copyright_holder {}
+
+.copyright_year {}

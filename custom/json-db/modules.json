@@ -1,0 +1,193 @@
+[
+    {
+        "id": "modules-15c0edde04bbd5",
+        "group": null,
+        "name": "Form Builder",
+        "route": "com.fastspot.form-builder*btx-form-builder",
+        "class": "BTXFormBuilder",
+        "icon": "form",
+        "gbp": {
+            "name": "",
+            "table": "",
+            "other_table": ""
+        },
+        "position": "0",
+        "extension": "com.fastspot.form-builder",
+        "actions": [
+            {
+                "id": "actions-15c0edde04c54c",
+                "name": "View Forms",
+                "route": "",
+                "in_nav": "on",
+                "form": null,
+                "view": "views-15c0edde04c043",
+                "report": null,
+                "class": "list",
+                "level": "0",
+                "position": 3
+            },
+            {
+                "id": "actions-15c0edde04c556",
+                "name": "Add Form",
+                "route": "add",
+                "in_nav": "on",
+                "form": null,
+                "view": null,
+                "report": null,
+                "class": "add",
+                "level": "0",
+                "position": 2
+            },
+            {
+                "id": "actions-15c0edde04c558",
+                "name": "Settings",
+                "route": "settings",
+                "in_nav": "on",
+                "form": null,
+                "view": null,
+                "report": null,
+                "class": "server",
+                "level": "2",
+                "position": 1
+            }
+        ],
+        "embeddable-forms": [],
+        "forms": [],
+        "reports": [],
+        "views": [
+            {
+                "id": "views-15c0edde04c043",
+                "title": "Forms",
+                "description": "",
+                "type": "searchable",
+                "table": "btx_form_builder_forms",
+                "fields": {
+                    "title": {
+                        "title": "Title",
+                        "parser": "",
+                        "width": 222,
+                        "numeric": false
+                    },
+                    "entries": {
+                        "title": "Entries",
+                        "parser": "",
+                        "width": 222,
+                        "numeric": true
+                    },
+                    "last_entry": {
+                        "title": "Last Entry",
+                        "parser": "if ($value) { $value = date(\"F j @ g:ia\",strtotime($value)); }",
+                        "width": 222,
+                        "numeric": false
+                    }
+                },
+                "settings": {
+                    "sort_column": "title",
+                    "sort_direction": "ASC",
+                    "per_page": "15",
+                    "filter": ""
+                },
+                "actions": {
+                    "entries": "{\"name\":\"Entries\",\"class\":\"icon_view\",\"route\":\"entries\",\"function\":\"\"}",
+                    "export": "{\"name\":\"Export\",\"class\":\"icon_export\",\"route\":\"export\",\"function\":\"\"}",
+                    "edit": "on",
+                    "delete": "on"
+                },
+                "preview_url": "",
+                "related_form": null
+            }
+        ]
+    },
+    {
+        "id": "modules-15c0edde04c55c",
+        "group": null,
+        "name": "Reusable Callouts",
+        "route": "com.fastspot.reusable-callouts*reusable-callouts",
+        "class": "BTXReusableCallouts",
+        "icon": "gear",
+        "gbp": {
+            "name": "",
+            "table": "",
+            "item_parser": "",
+            "other_table": ""
+        },
+        "position": "0",
+        "extension": "com.fastspot.reusable-callouts",
+        "actions": [
+            {
+                "id": "actions-15c0edde04cdc8",
+                "name": "View Reusable Callouts",
+                "route": "",
+                "in_nav": "on",
+                "form": null,
+                "view": "views-15c0edde04c94e",
+                "report": null,
+                "class": "list",
+                "level": "0",
+                "position": 3
+            },
+            {
+                "id": "actions-15c0edde04cddf",
+                "name": "Add Callout",
+                "route": "add",
+                "in_nav": "on",
+                "form": null,
+                "view": null,
+                "report": null,
+                "class": "add",
+                "level": "0",
+                "position": 2
+            },
+            {
+                "id": "actions-15c0edde04cde6",
+                "name": "Edit Callout",
+                "route": "edit",
+                "in_nav": "",
+                "form": null,
+                "view": null,
+                "report": null,
+                "class": "edit",
+                "level": "0",
+                "position": 1
+            }
+        ],
+        "embeddable-forms": [],
+        "forms": [],
+        "reports": [],
+        "views": [
+            {
+                "id": "views-15c0edde04c94e",
+                "title": "Reusable Callouts",
+                "description": "",
+                "type": "grouped",
+                "table": "btx_reusable_callouts",
+                "fields": {
+                    "title": {
+                        "width": "708",
+                        "title": "Title",
+                        "parser": "",
+                        "numeric": false
+                    }
+                },
+                "settings": {
+                    "filter": "",
+                    "group_field": "type",
+                    "sort": "`id` DESC",
+                    "other_table": "bigtree_callouts",
+                    "title_field": "name",
+                    "ot_sort_field": "name",
+                    "ot_sort_direction": "ASC",
+                    "group_parser": ""
+                },
+                "actions": {
+                    "report": "{\"name\":\"Report\",\"class\":\"icon_view\",\"route\":\"report\",\"function\":\"\"}",
+                    "archive": "on",
+                    "edit": "on",
+                    "delete": "on"
+                },
+                "preview_url": "",
+                "related_form": null
+            }
+        ]
+    }
+]
