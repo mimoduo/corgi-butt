@@ -1,6 +1,6 @@
 <?php
 	$site = [
-		"title" => "Client Name",
+		"title" => "Corgi Butt",
 		"schema_type" => "Organization",
 		"cse_key" => "",
 		"tag_manager_id" => "",
@@ -10,11 +10,11 @@
 		"address" => [
 			"name" => "",
 			"street" => "",
-			"city" => "",
+			"city" => "Lutherville Timonium",
 			"state" => "",
 			"zip" => "",
 			"phone" => "",
 			"fax" => "",
-			"email" => ""
+			"email" => "mimoduo@gmail.com"
 		]
 	];

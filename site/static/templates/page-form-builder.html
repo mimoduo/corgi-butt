@@ -23,7 +23,7 @@
 	<meta property="og:description" content="This is the Kitchen Sink form with all available Form Builder fields showing an error message and a required field missing content.">
 	<meta property="og:site_name" content="Corgi Butt">
 	<script src="//code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="../../css/site.css?04-02">
+	<link rel="stylesheet" href="../../css/site.css?04-04">
 	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Poppins:400,700" rel="stylesheet">
 </head>
 
@@ -198,17 +198,18 @@
 								<input type="file" id="form_builder_field_13" name="form_builder_element_7" class="form_builder_upload" value="" />
 								<div class="form_builder_sublabel"><span id="form_builder_file_size_error_13">Maximum File Size: 1 KB</span></div>
 							</fieldset>
-							<script> document.getElementById("form_builder_field_13").onchange = function() {
-			if (this.files[0].size > 1024) {
-				this.className = this.className.replace("form_builder_error", "") + " form_builder_error";
-				this.value = "";
-				document.getElementById('form_builder_file_size_error_13').className = "form_builder_file_size_error";
-			} else {
-				this.className = this.className.replace("form_builder_error", "");
-				document.getElementById('form_builder_file_size_error_13').className = "";
-			}
-		};
-	</script>
+							<script>
+								document.getElementById("form_builder_field_13").onchange = function() {
+									if (this.files[0].size > 1024) {
+										this.className = this.className.replace("form_builder_error", "") + " form_builder_error";
+										this.value = "";
+										document.getElementById('form_builder_file_size_error_13').className = "form_builder_file_size_error";
+									} else {
+										this.className = this.className.replace("form_builder_error", "");
+										document.getElementById('form_builder_file_size_error_13').className = "";
+									}
+								};
+							</script>
 							<fieldset>
 								<label for="form_builder_field_14">Name</label>
 								<div class="form_builder_wrap">
@@ -425,7 +426,7 @@
 		var WWW_ROOT = "";
 		var STATIC_ROOT = "../../";
 	</script>
-	<script src="../../js/site.js?04-02"></script>
+	<script src="../../js/site.js?04-04"></script>
 </body>
 
 </html>

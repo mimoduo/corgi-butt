@@ -32,39 +32,31 @@
 					<div class="fs-row">
 						<div class="fs-cell">
 							<div class="header_ribbon_inner">
+								<div class="header_ribbon_group">
 								<?php
 									include_with("logo.php", [
-										"modifier" => "header",
-										"icon" => "logo"
+										"modifier" => "header"
 									]);
 
 									include_with("navigation/main.php", [
 										"modifier" => "lg",
-										"title" => "Site",
-										"icon" => "caret_down"
-									]);
-
-									include_with("navigation/basic.php", [
-										"class" => "secondary_nav",
-										"modifier" => "lg",
-										"title" => "Secondary",
-										"links" => $cms->getSetting("nav-secondary")
+										"title" => "Site"
 									]);
 								?>
+								</div>
 
-								<div class="header_group">
+								<div class="header_ribbon_group">
+									<a class="header_email_link" href="mailto:mimoduo@gmail.com">
+										<span class="header_email_link_inner">
+											<span class="header_email_link_icon"><?=icon("mail")?></span>
+											<span class="header_email_link_label">Email Us</span>
+										</span>
+									</a>
 									<?php
 										include_with("handle.php", [
 											"class" => "menu",
 											"icon" => "menu",
 											"modifier" => "primary"
-										]);
-
-										include_with("search-handle.php", []);
-
-										include_with("search.php", [
-											"modifier" => "lg",
-											"placeholder" => "Search"
 										]);
 									?>
 								</div>

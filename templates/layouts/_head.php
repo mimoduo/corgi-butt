@@ -29,6 +29,7 @@
 
 	<!-- Insert Fonts Here -->
 	<link rel="stylesheet" href="<?=STATIC_ROOT?>css/site.css?<?=filemtime(SITE_ROOT."css/site.css")?>">
+	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Poppins:400,700" rel="stylesheet">
 
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 </head>

@@ -12,6 +12,13 @@
                 "settings": null
             },
             {
+                "id": "page_intro",
+                "title": "Page Intro",
+                "subtitle": "",
+                "type": "html",
+                "settings": null
+            },
+            {
                 "id": "page_content",
                 "title": "Page Content",
                 "subtitle": "",
@@ -26,22 +33,7 @@
                 "settings": {
                     "groups": [
                         "2"
-                    ],
-                    "noun": "",
-                    "max": ""
-                }
-            },
-            {
-                "id": "sidebar_callouts",
-                "title": "Sidebar Callouts",
-                "subtitle": "",
-                "type": "callouts",
-                "settings": {
-                    "groups": [
-                        "3"
-                    ],
-                    "noun": "",
-                    "max": ""
+                    ]
                 }
             },
             {
@@ -52,13 +44,11 @@
                 "settings": {
                     "groups": [
                         "1"
-                    ],
-                    "noun": "",
-                    "max": ""
+                    ]
                 }
             }
         ],
-        "hooks": null,
+        "hooks": [],
         "module": null,
         "level": "0",
         "position": "7",

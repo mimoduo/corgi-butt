@@ -4835,13 +4835,14 @@ button {
 .page_intro {
   font-size: 18px;
   font-size: 1.125rem;
-  line-height: 1.55556;
-  margin: 0; }
+  line-height: 1.55556; }
   @media screen and (min-width: 980px) {
     .page_intro {
       font-size: 22px;
       font-size: 1.375rem;
       line-height: 1.45455; } }
+  .page_intro p {
+    margin: 0; }
 
 .page_sidebar {
   clear: right; }

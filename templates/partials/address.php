@@ -1,69 +1,40 @@
-<?php
-	// Optional "name", "street", "city", "state", "zip", "email", "phone", "fax"
-?>
-<div class="address" itemscope itemtype="http://schema.org/PostalAddress">
-	<span class="address_group">
-		<?php
-			if (!empty($name)) {
-		?>
-		<span class="address_name" itemprop="name"><?=$name?></span>
-		<?php
-			}
-	
-			if (!empty($street)) {
-		?>
-		<span class="address_street" itemprop="streetAddress"><?=$street?></span>
-		<?php
-			}
-		?>
-		<span class="address_set">
-			<?php
-				if (!empty($city)) {
-			?>
-			<span class="address_city" itemprop="addressLocality"><?=$city?></span>
-			<?php
-				}
-		
-				if (!empty($state)) {
-			?>
-			<span class="address_state" itemprop="addressRegion"><?=$state?></span>
-			<?php
-				}
-		
-				if (!empty($zip)) {
-			?>
-			<span class="address_zip" itemprop="postalCode"><?=$zip?></span>
-			<?php
-				}
-			?>
+<div class="meta" itemscope itemtype="http://schema.org/{{ vars.schemaType }}">
+	<div class="logo logo_footer" itemscope itemtype="http://schema.org/<?=$site["schema_type"]?>">
+		<a class="logo_link" itemprop="url" href="<?=$link?>">
+			<span class="logo_link_icon">
+				<img class="logo_link_image" src="<?=STATIC_ROOT?>images/logo.svg" alt="" />
+			</span>
+			<span class="logo_link_label"><?=$site["title"]?></span>
+		</a>
+	</div>
+	<div class="meta_details" itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
+		<span class="meta_detail meta_detail_address">
+			<span class="meta_detail_icon"><?=icon("place")?></span>
+			<span class="meta_detail_label meta_detail_label_address">
+				<span class="meta_detail_address_group">
+					<span class="meta_detail_address_street" itemprop="streetAddress"><?=$street?></span>
+				</span>
+				<span class="meta_detail_address_group">
+					<span class="meta_detail_address_city" itemprop="addressLocality"><?=$city?></span>
+					<span class="meta_detail_address_state" itemprop="addressRegion"><?=$state?></span>
+					<span class="meta_detail_address_zip" itemprop="postalCode"><?=$zip?></span>
+				</span>
+			</span>
 		</span>
-	</span>
-	<?php
-		if (!empty($email)) {
-	?>
-	<span class="address_detail">
-		<span class="address_detail_icon"><?=icon("email")?></span>
-		<a class="address_detail_label address_detail_label_email" itemprop="email" href="mailto:<?=$email?>"><?=$email?></a>
-	</span>
-	<?php
-		}
-
-		if (!empty($phone)) {
-	?>
-	<span class="address_detail">
-		<span class="address_detail_icon"><?=icon("phone")?></span>
-		<a class="address_detail_label address_detail_label_phone" <?=tel_href($phone)?> itemprop="telephone"><?=$phone?></a>
-	</span>
-	<?php
-		}
-
-		if (!empty($fax)) {
-	?>
-	<span class="address_detail">
-		<span class="address_detail_icon"><?=icon("fax")?></span>
-		<a class="address_detail_label address_detail_label_fax" <?=tel_href($fax)?> itemprop="fax"><?=$fax?></a>
-	</span>
-	<?php
-		}
-	?>
+		<?php
+			if (!empty($email)) {
+		?>
+		<span class="meta_detail meta_detail_email">
+			<span class="meta_detail_icon"><?=icon("mail")?></span>
+			<a class="meta_detail_label meta_detail_label_email" href="mailto:<?=$email?>" itemprop="email"><?=$email?></a>
+		</span>
+		<?php
+			}
+		?>
+		<span class="meta_detail">
+			<div class="copyright">
+				<p class="copyright_info">&copy; <span class="copyright_holder" itemprop="copyrightHolder" itemscope="" itemtype="http://schema.org/<?=$site["schema_type"]?>"><?=$site["title"]?></span> <span <span class="copyright_year" itemprop="copyrightYear"><?=date("Y")?></span></p>
+			</div>
+		</span>
+	</div>
 </div>

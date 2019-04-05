@@ -73,8 +73,10 @@
 
 .page_intro {
 	@include intro_text;
-	
-	margin: 0;
+
+	p {
+		margin: 0;
+	}
 }
 
 .page_sidebar {
