@@ -1,1 +1,104 @@
-[]
+[
+    {
+        "id": "directory",
+        "name": "Directory",
+        "description": "",
+        "level": "0",
+        "resources": [
+            {
+                "id": "items",
+                "type": "matrix",
+                "title": "Items",
+                "subtitle": "",
+                "settings": {
+                    "style": "list",
+                    "columns": [
+                        {
+                            "type": "image",
+                            "id": "image",
+                            "title": "Image",
+                            "settings": "{\"directory\":\"files/pages/\",\"preset\":\"\",\"min_width\":\"300\",\"min_height\":\"300\",\"preview_prefix\":\"\",\"crops\":[{\"prefix\":\"square-xsml-\",\"width\":\"300\",\"height\":\"300\",\"grayscale\":\"\"}]}"
+                        },
+                        {
+                            "type": "text",
+                            "id": "name",
+                            "title": "Name"
+                        },
+                        {
+                            "type": "text",
+                            "id": "title",
+                            "title": "Title"
+                        },
+                        {
+                            "type": "textarea",
+                            "id": "description",
+                            "title": "Description"
+                        }
+                    ]
+                }
+            }
+        ],
+        "display_default": "",
+        "display_field": "",
+        "position": 1
+    },
+    {
+        "id": "timeline",
+        "name": "Timeline",
+        "description": "",
+        "level": "0",
+        "resources": [
+            {
+                "id": "title",
+                "type": "text",
+                "title": "Title",
+                "subtitle": "",
+                "settings": null
+            },
+            {
+                "id": "caption",
+                "type": "html",
+                "title": "Caption",
+                "subtitle": "",
+                "settings": null
+            },
+            {
+                "id": "label",
+                "type": "text",
+                "title": "Label",
+                "subtitle": "",
+                "settings": null
+            },
+            {
+                "id": "items",
+                "type": "matrix",
+                "title": "Items",
+                "subtitle": "",
+                "settings": {
+                    "style": "list",
+                    "columns": [
+                        {
+                            "type": "image",
+                            "id": "image",
+                            "title": "Image",
+                            "settings": "{\"directory\":\"files/pages/\",\"preset\":\"\",\"min_width\":\"100\",\"min_height\":\"100\",\"preview_prefix\":\"square-thumb-\",\"crops\":[{\"prefix\":\"square-thumb-\",\"width\":\"100\",\"height\":\"100\",\"grayscale\":\"\"}]}"
+                        },
+                        {
+                            "type": "text",
+                            "id": "title",
+                            "title": "Title",
+                            "display_title": "on"
+                        },
+                        {
+                            "type": "textarea",
+                            "id": "caption",
+                            "title": "Caption"
+                        }
+                    ]
+                }
+            }
+        ],
+        "display_default": "",
+        "display_field": "title"
+    }
+]

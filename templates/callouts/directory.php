@@ -4,41 +4,57 @@
 			<div class="directory_inner">
 				<div class="directory_body">
 					<ul class="directory_items" role="list" itemscope itemtype="http://schema.org/ItemList">
-						{% for item in items %}
+						<?php
+							foreach ($items as $item) {
+						?>
 						<li class="directory_item" itemscope itemprop="itemListElement" itemtype="http://schema.org/ListItem">
 							<meta itemprop="position" content="{{ loop.index }}">
 							<div class="directory_item_inner" itemscope itemtype="http://schema.org/Person">
-								{% if item.image %}
+								<?php
+									if (!empty($item["image"])) {
+								?>
 								<figure class="directory_item_figure">
-									<span class="directory_item_figure_icon">{{ site.icon("paw") }}</span>
+									<span class="directory_item_figure_icon"><?=icon("paw")?></span>
 									<a class="directory_item_figure_link" href="#">
-										{% include par ~ "image.twig" with {
-											class: "directory_item",
-											image: item.image,
-											dimension: img.square.xsml,
-											itemprop: ""
-										} %}
+										<?php
+											include_with("image.php", [
+												"class" => "directory_item",
+												"image" => BigTree::prefixFile($item["image"], "square-xsml-")
+											]);
+										?>
 									</a>
 								</figure>
-								{% endif %}
+								<?php
+									 }
+								?>
 								<div class="directory_item_content">
 									<header class="directory_item_header">
-										<h3 class="directory_item_name" itemprop="name">{{ item.name }}</h3>
-										{% if item.title %}
-										<div class="directory_item_title">{{ item.title }}</div>
-										{% endif %}
+										<h3 class="directory_item_name" itemprop="name"><?=$item["name"]?></h3>
+										<?php
+											if (!empty($item["title"])) {
+										?>
+										<div class="directory_item_title"><?=$item["title"]?></div>
+										<?php
+											}
+										?>
 									</header>
 									<div class="directory_item_body">
-										{% if item.description %}
+										<?php
+											if (!empty($item["description"])) {
+										?>
 										<div class="directory_item_description" itemprop="description">
-											<p>{{ item.description }}</p>
+											<?=nl2br($item["description"])?>
 										</div>
-										{% endif %}
+										<?php
+											 }
+										?>
 									</div>
 								</div>
 							</div>
 						</li>
-						{% endfor %}
+						<?php
+							 }
+						?>
 					</ul>
 				</div>
 			</div>

@@ -2,7 +2,9 @@
     {
         "id": "1",
         "name": "Full Width",
-        "callouts": []
+        "callouts": [
+            "directory"
+        ]
     },
     {
         "id": "2",
