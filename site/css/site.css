@@ -5718,7 +5718,7 @@ button {
     top: 0;
     left: 0;
     z-index: 2;
-    background: radial-gradient(ellipse at center, #000 25%, transparent);
+    background: radial-gradient(ellipse at center, #000 15%, transparent);
     content: ""; }
 
 .spotlight_background {
@@ -5726,7 +5726,21 @@ button {
   width: 100%;
   position: absolute;
   top: 0;
+  left: 0;
+  display: none; }
+  @media screen and (min-width: 980px) {
+    .spotlight_background {
+      display: block; } }
+
+.spotlight_poster_background {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
   left: 0; }
+  @media screen and (min-width: 980px) {
+    .spotlight_poster_background {
+      display: none; } }
 
 /* Spotlight Content
 ============================================================================= */
@@ -5894,8 +5908,7 @@ button {
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5;
-  max-width: 75%;
-  margin: 0; }
+  max-width: 75%; }
   @media screen and (min-width: 980px) {
     .timeline_caption {
       font-size: 18px;
@@ -5905,6 +5918,8 @@ button {
     .timeline_caption {
       max-width: 85%;
       margin-bottom: 20px; } }
+  .timeline_caption p {
+    margin: 0; }
 
 @media screen and (min-width: 1220px) {
   .timeline_body {

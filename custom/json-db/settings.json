@@ -169,5 +169,16 @@
         "locked": "",
         "encrypted": "",
         "extension": null
+    },
+    {
+        "id": "settings",
+        "name": "Form Builder Settings",
+        "description": null,
+        "type": null,
+        "settings": null,
+        "locked": "",
+        "system": "on",
+        "encrypted": "",
+        "extension": "com.fastspot.form-builder"
     }
 ]

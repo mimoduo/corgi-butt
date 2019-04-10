@@ -37,11 +37,13 @@
 
   max-width: 75%;
 
-  margin: 0;
-
   @media #{$min_xl} {
     max-width: 85%;
     margin-bottom: 20px;
+  }
+
+  p {
+    margin: 0;
   }
 }
 

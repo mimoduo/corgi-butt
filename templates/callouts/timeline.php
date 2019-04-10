@@ -5,8 +5,8 @@
         <div class="timeline_content">
           <header class="timeline_header">
             <h2 class="timeline_title"><?=$title?></h2>
-            <p class="timeline_caption"><?=caption?></p>
-            <a class="timeline_link" href="mailto:mimoduo@gmail.com">
+            <div class="timeline_caption"><?=$caption?></div>
+            <a class="timeline_link" href="mailto:mimoduo@gmail.com?subject=Let's Work Together!">
 							<span class="timeline_link_inner">
 								<span class="timeline_link_label">Work With Us</span>
 								<span class="timeline_link_icon" aria-hidden="true">
@@ -19,7 +19,7 @@
 						</a>
           </header>
           <div class="timeline_body">
-            <span class="timeline_label"><?=label?></span>
+            <span class="timeline_label">The Beginning</span>
             <ol class="timeline_items">
               <?php
 								foreach ($items as $key => $item) {
@@ -37,7 +37,7 @@
 									<div class="timeline_item_body">
 										<header class="timeline_item_header">
 											<h3 class="timeline_item_title">
-												<span class="timeline_item_title_index"><?=$key?>.</span>
+												<span class="timeline_item_title_index"><?=$key + 1?>.</span>
 												<span class="timeline_item_title_label"><?=$item["title"]?></span>
 											</h3>
 										</header>
@@ -55,7 +55,7 @@
           </div>
         </div>
         <footer class="timeline_footer">
-					<a class="timeline_link" href="mailto:mimoduo@gmail.com">
+					<a class="timeline_link" href="mailto:mimoduo@gmail.com?subject=Let's Work Together!">
 						<span class="timeline_link_inner">
 							<span class="timeline_link_label">Let's Start Your Timeline!</span>
 							<span class="timeline_link_icon" aria-hidden="true">

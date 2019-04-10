@@ -60,35 +60,18 @@
         "routed": "",
         "resources": [
             {
-                "id": "page_feature",
-                "title": "Feature",
-                "subtitle": "",
-                "type": "com.fastspot.advanced-callouts*inline-callout-set",
-                "settings": {
-                    "prefilled": [
-                        {
-                            "title": "Feature",
-                            "type": "home-feature"
-                        }
-                    ]
-                }
-            },
-            {
                 "id": "full_width_callouts",
                 "title": "Blocks",
                 "subtitle": "",
                 "type": "callouts",
                 "settings": {
                     "groups": [
-                        "4",
                         "1"
-                    ],
-                    "noun": "",
-                    "max": ""
+                    ]
                 }
             }
         ],
-        "hooks": null,
+        "hooks": [],
         "module": null,
         "level": "2",
         "position": "6",

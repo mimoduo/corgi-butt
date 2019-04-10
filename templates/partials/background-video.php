@@ -6,7 +6,7 @@
 	$bg_options = [
 		"source" => [
 			"poster" => $poster,
-			"mp4" => $video
+			"video" => $video
 		]
 	];
 

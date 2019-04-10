@@ -40,7 +40,7 @@
         ],
         "display_default": "",
         "display_field": "",
-        "position": 1
+        "position": 3
     },
     {
         "id": "timeline",
@@ -99,6 +99,85 @@
             }
         ],
         "display_default": "",
-        "display_field": "title"
+        "display_field": "title",
+        "position": 2
+    },
+    {
+        "id": "spotlight",
+        "name": "Spotlight",
+        "description": "",
+        "level": "0",
+        "resources": [
+            {
+                "id": "title",
+                "type": "text",
+                "title": "Title",
+                "subtitle": "",
+                "settings": null
+            },
+            {
+                "id": "description",
+                "type": "textarea",
+                "title": "Description",
+                "subtitle": "",
+                "settings": null
+            },
+            {
+                "id": "image",
+                "type": "image",
+                "title": "Image",
+                "subtitle": "",
+                "settings": {
+                    "directory": "files/callouts/",
+                    "min_width": "1220",
+                    "min_height": "686",
+                    "preview_prefix": "wide-lrg-",
+                    "crops": [
+                        {
+                            "prefix": "wide-lrg-",
+                            "width": "1220",
+                            "height": "686",
+                            "thumbs": {
+                                "1": {
+                                    "prefix": "wide-med-",
+                                    "width": "980"
+                                },
+                                "2": {
+                                    "prefix": "wide-sml-",
+                                    "width": "740"
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "video",
+                "type": "text",
+                "title": "Video",
+                "subtitle": "",
+                "settings": null
+            }
+        ],
+        "display_default": "",
+        "display_field": "",
+        "position": 1
+    },
+    {
+        "id": "button",
+        "name": "Button",
+        "description": "",
+        "level": "0",
+        "resources": [
+            {
+                "id": "text",
+                "type": "text",
+                "title": "Text",
+                "subtitle": "",
+                "settings": null
+            }
+        ],
+        "display_default": "",
+        "display_field": "text"
     }
 ]

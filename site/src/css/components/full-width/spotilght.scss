@@ -28,7 +28,7 @@
     background:
       radial-gradient(
         ellipse at center,
-          #000 25%,
+          #000 15%,
           transparent
       );
     content: "";
@@ -36,7 +36,21 @@
 }
 
 .spotlight_background {
-	@include cover;
+  @include cover;
+  
+  display: none;
+
+  @media #{$min_lg} {
+    display: block;
+  }
+}
+
+.spotlight_poster_background {
+  @include cover;
+
+  @media #{$min_lg} {
+    display: none;
+  }
 }
 
 
