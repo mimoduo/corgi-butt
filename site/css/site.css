@@ -3482,7 +3482,6 @@ strong {
     font-size: 1.25rem;
     font-weight: 700;
     line-height: 1.5;
-    text-transform: uppercase;
     margin: 40px 0 20px; }
   .typography h6 {
     font-family: "Poppins", sans-serif;
@@ -3491,7 +3490,6 @@ strong {
     font-size: 1rem;
     font-weight: 700;
     line-height: 1.5;
-    text-transform: uppercase;
     margin: 40px 0 20px; }
   .typography .intro {
     font-size: 18px;
@@ -3645,7 +3643,6 @@ strong {
     font-size: 1rem;
     font-weight: 700;
     line-height: 1.5;
-    text-transform: uppercase;
     background: #000;
     color: #fff;
     padding: 10px 20px;
@@ -4228,9 +4225,6 @@ button {
   @media screen and (min-width: 740px) {
     .form_builder {
       margin-top: 70px; } }
-  @media screen and (min-width: 980px) {
-    .form_builder {
-      margin-top: 80px; } }
   @media screen and (min-width: 740px) {
     .form_builder {
       margin-bottom: 70px; } }
@@ -4267,14 +4261,17 @@ button {
       font-size: 1.25rem;
       font-weight: 700;
       line-height: 1.5;
-      text-transform: uppercase;
       display: block;
       margin-bottom: 5px; }
   .form_builder input:not([type="submit"]):not([type="file"]),
   .form_builder textarea {
     width: 100%;
-    border: 1px solid #000;
-    padding: 10px; }
+    border: 3px solid rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    padding: 13px 20px; }
+    .form_builder input:not([type="submit"]):not([type="file"]).form_builder_error,
+    .form_builder textarea.form_builder_error {
+      border-color: rgba(228, 53, 10, 0.5); }
   .form_builder input::-ms-clear {
     width: 0;
     height: 0; }
@@ -4284,6 +4281,9 @@ button {
 
 /* Custom Elements
 ============================================================================= */
+.form_builder_required_star {
+  color: #E4350A; }
+
 .form_builder_sublabel {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -4291,7 +4291,6 @@ button {
   font-size: 1rem;
   font-weight: 700;
   line-height: 1.5;
-  text-transform: uppercase;
   display: block;
   margin-top: 5px;
   margin-bottom: 20px; }
@@ -5449,7 +5448,6 @@ button {
   font-size: 1.25rem;
   font-weight: 700;
   line-height: 1.5;
-  text-transform: uppercase;
   margin-bottom: 2px; }
 
 .calculator_item_title_label {
@@ -5932,7 +5930,6 @@ button {
   font-size: 1rem;
   font-weight: 700;
   line-height: 1.5;
-  text-transform: uppercase;
   color: #261602;
   display: block;
   text-align: center; }

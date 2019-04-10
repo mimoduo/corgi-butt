@@ -3,6 +3,7 @@
         "id": "1",
         "name": "Full Width",
         "callouts": [
+            "calculator",
             "directory",
             "spotlight",
             "timeline"

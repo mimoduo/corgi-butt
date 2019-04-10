@@ -22,7 +22,8 @@
                         {
                             "type": "text",
                             "id": "name",
-                            "title": "Name"
+                            "title": "Name",
+                            "display_title": "on"
                         },
                         {
                             "type": "text",
@@ -40,7 +41,7 @@
         ],
         "display_default": "",
         "display_field": "",
-        "position": 3
+        "position": 4
     },
     {
         "id": "timeline",
@@ -100,7 +101,7 @@
         ],
         "display_default": "",
         "display_field": "title",
-        "position": 2
+        "position": 3
     },
     {
         "id": "spotlight",
@@ -161,7 +162,7 @@
         ],
         "display_default": "",
         "display_field": "",
-        "position": 1
+        "position": 2
     },
     {
         "id": "button",
@@ -178,6 +179,57 @@
             }
         ],
         "display_default": "",
-        "display_field": "text"
+        "display_field": "text",
+        "position": 1
+    },
+    {
+        "id": "calculator",
+        "name": "Calculator",
+        "description": "",
+        "level": "0",
+        "resources": [
+            {
+                "id": "caption",
+                "type": "textarea",
+                "title": "Caption",
+                "subtitle": "",
+                "settings": null
+            },
+            {
+                "id": "items",
+                "type": "matrix",
+                "title": "Items",
+                "subtitle": "",
+                "settings": {
+                    "style": "list",
+                    "columns": [
+                        {
+                            "type": "image",
+                            "id": "image",
+                            "title": "Image",
+                            "settings": "{\"directory\":\"files/pages/\",\"preset\":\"\",\"min_width\":\"500\",\"min_height\":\"500\",\"preview_prefix\":\"square-sml-\",\"crops\":[{\"prefix\":\"square-sml-\",\"width\":\"500\",\"height\":\"500\",\"grayscale\":\"\"}]}"
+                        },
+                        {
+                            "type": "text",
+                            "id": "label",
+                            "title": "Label",
+                            "display_title": "on"
+                        },
+                        {
+                            "type": "textarea",
+                            "id": "caption",
+                            "title": "Caption"
+                        },
+                        {
+                            "type": "text",
+                            "id": "value",
+                            "title": "Value"
+                        }
+                    ]
+                }
+            }
+        ],
+        "display_default": "",
+        "display_field": ""
     }
 ]

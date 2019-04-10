@@ -3,7 +3,8 @@
 ============================================================================= */
 
 .form_builder {
-	@include margined_lg;
+	@include margined_md_top;
+	@include margined_lg_bottom;
 
 	h2 {
 		@include h2;
@@ -30,8 +31,13 @@
 	textarea {
 		width: 100%;
 
-		border: 1px solid #000;
-		padding: 10px;
+		border: 3px solid rgba(#000, .1);
+		border-radius: 3px;
+		padding: 13px 20px;
+
+		&.form_builder_error {
+			border-color: rgba(#E4350A, .5);
+		}
 	}
 
 	input::-ms-clear {
@@ -49,7 +55,9 @@
 /* Custom Elements
 ============================================================================= */
 
-.form_builder_required_star {}
+.form_builder_required_star {
+	color: #E4350A;
+}
 
 .form_builder_sublabel {
 	@include h6;
