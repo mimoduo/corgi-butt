@@ -767,9 +767,6 @@ button {
   margin-bottom: 60px; }
   @media screen and (min-width: 740px) {
     .form_builder {
-      margin-top: 70px; } }
-  @media screen and (min-width: 740px) {
-    .form_builder {
       margin-bottom: 70px; } }
   @media screen and (min-width: 980px) {
     .form_builder {
