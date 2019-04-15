@@ -207,7 +207,7 @@
                             "type": "image",
                             "id": "image",
                             "title": "Image",
-                            "settings": "{\"directory\":\"files/pages/\",\"preset\":\"\",\"min_width\":\"500\",\"min_height\":\"500\",\"preview_prefix\":\"square-sml-\",\"crops\":[{\"prefix\":\"square-sml-\",\"width\":\"500\",\"height\":\"500\",\"grayscale\":\"\"}]}"
+                            "settings": "{\"directory\":\"files/pages/\",\"preset\":\"\",\"min_width\":\"500\",\"min_height\":\"500\",\"preview_prefix\":\"square-xsml-\",\"crops\":[{\"prefix\":\"square-xsml-\",\"width\":\"500\",\"height\":\"500\",\"grayscale\":\"\"}]}"
                         },
                         {
                             "type": "text",

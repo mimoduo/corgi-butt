@@ -16,9 +16,12 @@
 							<div class="calculator_item">
 								<div class="calculator_item_body">
 									<figure class="calculator_item_figure">
-										<div class="lazy_image_wrapper calculator_item_image_wrapper">
-											<img class="js-lazy calculator_item_image js-lazyloaded" data-src="<?=Bigtree::prefixFile($item["image"], "square-sml-")?> alt="">
-										</div>
+										<?php
+											include_with("image.php", [
+												"class" => "calculator_item",
+												"image" => BigTree::prefixFile($item["image"], "square-xsml-")
+											]);
+										?>
 									</figure>
 									<div class="calculator_item_content" data-label="<?=$item["label"]?>" data-value="<?=$item["value"]?>">
 										<div class="calculator_item_title">
