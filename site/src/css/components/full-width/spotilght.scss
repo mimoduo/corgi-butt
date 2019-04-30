@@ -47,10 +47,6 @@
 
 .spotlight_poster_background {
   @include cover;
-
-  @media #{$min_lg} {
-    display: none;
-  }
 }
 
 

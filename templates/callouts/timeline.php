@@ -26,14 +26,14 @@
 							?>
 							<li class="timeline_item">
 								<article class="timeline_item_article">
-									<figure class="timeline_item_figure">
-										<?php
+									<span class="timeline_item_figure">
+										<!-- <?php
 											include_with("image.php", [
 												"class" => "timeline_item",
 												"image" => BigTree::prefixFile($item["image"], "square-thumb-")
 											]);
-										?>
-									</figure>
+										?> -->
+									</span>
 									<div class="timeline_item_body">
 										<header class="timeline_item_header">
 											<h3 class="timeline_item_title">

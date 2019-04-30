@@ -14,13 +14,13 @@
               {% for item in items %}
                 <li class="timeline_item">
                   <article class="timeline_item_article">
-                    <figure class="timeline_item_figure">
-                      {% include par ~ "image.twig" with {
+                    <span class="timeline_item_figure">
+                      {# {% include par ~ "image.twig" with {
                         class: "timeline_item",
                         image: item.image,
                         dimension: img.square.thumb
-                      } %}
-                    </figure>
+                      } %} #}
+                    </span>
                     <div class="timeline_item_body">
                       <header class="timeline_item_header">
                         <h3 class="timeline_item_title">
