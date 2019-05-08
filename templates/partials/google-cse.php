@@ -3,7 +3,7 @@
 	global $site;
 	
 	if (empty($site["cse_key"])) {
-		die("Please enter the CSE key in /custom/inc/required/config.php");
+		// die("Please enter the CSE key in /custom/inc/required/config.php");
 	}
 ?>
 <div class="search_results<?php if (!empty($theme)) { ?> theme_<?=$theme?><?php } ?>">
