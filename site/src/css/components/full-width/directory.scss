@@ -85,6 +85,8 @@
 }
 
 .directory_item_image_wrapper {
+	border-radius: 50%;
+	overflow: hidden;
 	padding-bottom: $square;
 }
 
