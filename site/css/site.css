@@ -5715,7 +5715,7 @@ button {
     top: 0;
     left: 0;
     z-index: 2;
-    background: radial-gradient(ellipse at center, #000 15%, transparent);
+    background: radial-gradient(ellipse at center, #000, transparent);
     content: ""; }
 
 .spotlight_background {
