@@ -5708,15 +5708,16 @@ button {
   @media print {
     .spotlight_media {
       display: none; } }
-  .spotlight_media:before {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    background: radial-gradient(ellipse at center, #000, transparent);
-    content: ""; }
+  @media screen and (min-width: 600px) {
+    .spotlight_media:before {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      background: radial-gradient(ellipse at center, #000, transparent);
+      content: ""; } }
 
 .spotlight_background {
   height: 100%;

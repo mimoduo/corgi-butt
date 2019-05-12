@@ -21,17 +21,20 @@
   }
   
   &:before {
-    @include cover;
+    
+    @media screen and (min-width: 600px) {
+      @include cover;
 
-    z-index: 2;
-
-    background:
-      radial-gradient(
-        ellipse at center,
-          #000,
-          transparent
-      );
-    content: "";
+      z-index: 2;
+  
+      background:
+        radial-gradient(
+          ellipse at center,
+            #000,
+            transparent
+        );
+      content: "";
+    }
   }
 }
 
