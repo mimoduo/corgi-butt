@@ -1,14 +1,10 @@
 <div class="spotlight">
 	<div class="spotlight_media">
 		<?php
-			include_with("background.php", [
+			include_with("background-video.php", [
 				"class" => "spotlight_poster",
-				"image" => $image,
-				"sources" => [
-					"0px" => "wide-sml-",
-					"740px" => "wide-med-",
-					"740px" => "wide-lrg-"
-				]
+				"poster" => $image,
+				"video" => $video
 			]);
 		?>
 	</div>
