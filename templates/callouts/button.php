@@ -1,4 +1,4 @@
-<a class="wysiwyg_button_link" href="#">
+<a class="wysiwyg_button_link" href="mimoduo@gmail.com">
 	<span class="wysiwyg_button_link_inner">
 		<span class="wysiwyg_button_link_label"><?=$text?></span>
 		<span class="wysiwyg_button_link_icon" aria-hidden="true">

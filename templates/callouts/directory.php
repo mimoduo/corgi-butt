@@ -15,14 +15,12 @@
 								?>
 								<figure class="directory_item_figure">
 									<span class="directory_item_figure_icon"><?=icon("paw")?></span>
-									<a class="directory_item_figure_link" href="#">
-										<?php
-											include_with("image.php", [
-												"class" => "directory_item",
-												"image" => BigTree::prefixFile($item["image"], "square-xsml-")
-											]);
-										?>
-									</a>
+									<?php
+										include_with("image.php", [
+											"class" => "directory_item",
+											"image" => BigTree::prefixFile($item["image"], "square-xsml-")
+										]);
+									?>
 								</figure>
 								<?php
 									 }
