@@ -39,10 +39,10 @@
 .page_sub_nav {}
 
 .page_main_content {
-	@include focus_outline_none;
 	@include padded_xl_bottom;
 
 	display: block;
+	outline: 0;
 
 	@media #{$min_lg} {
 		float: left;

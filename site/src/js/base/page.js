@@ -45,6 +45,7 @@ Site.modules.Page = (function($, Site) {
 
 	function pageLoad() {
 		$("body").removeClass("preload").addClass("loaded");
+		$("body").removeClass("no-js").addClass("js");
 
 		$(window).trigger("resize");
 

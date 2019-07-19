@@ -691,24 +691,3 @@ $portraitClassic: 150%;
 		-webkit-overflow-scrolling: auto;
 	}
 }
-
-
-// Input Focus
-// =============================================================================
-
-// Uses 'What input ?' detection - https://github.com/ten1seven/what-input
-
-[data-whatinput="mouse"] a:focus,
-[data-whatinput="mouse"] button:focus,
-[data-whatinput="touch"] a:focus,
-[data-whatinput="touch"] button:focus {
-	outline: 0;
-}
-
-@mixin focus_outline_none() {
-
-	[data-whatinput="mouse"] &:focus,
-	[data-whatinput="touch"] &:focus {
-		outline: 0;
-	}
-}
