@@ -26,6 +26,7 @@
 	<meta name="theme-color" content="<?=$site["favicon_color"]?>">
 
 	<?php BigTreeCMS::drawHeadTags($site["title"]); ?>
+	<meta property="og:url" content="<?=$bigtree["page"]["link"]?>">
 
 	<!-- Insert Fonts Here -->
 	<link rel="stylesheet" href="<?=STATIC_ROOT?>css/site.css?<?=filemtime(SITE_ROOT."css/site.css")?>" media="all">

@@ -1,7 +1,7 @@
 <?php
 	include "_header.php";
 ?>
-
+<pre><?=var_dump($bigtree["page"])?></pre>
 <div class="page">
 	<div class="page_content">
 		<div class="fs-row">
