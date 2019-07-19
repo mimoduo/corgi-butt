@@ -4,7 +4,7 @@
 ?>
 <nav class="<?=$class?><?php if (!empty($modifier)) { echo " ".$class."_".$modifier; } ?>" aria-label="<?=$title?>" itemscope itemtype="http://schema.org/SiteNavigationElement">
 	<header class="<?=$class?>_header">
-		<h2 class="<?=$class?>_title"><?=$title?> Navigation</h2>
+		<h2 class="<?=$class?>_title"><?=$title?> Navigation<?php if (!empty($label)) { echo " " . $label; } ?></h2>
 	</header>
 
 	<ul class="<?=$class?>_list" aria-label="<?=$title?> Navigation">

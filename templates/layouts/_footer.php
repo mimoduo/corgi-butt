@@ -20,6 +20,7 @@
 				include_with("navigation/main.php", [
 					"modifier" => "sm",
 					"title" => "Site",
+					"label" => "Menu",
 					"icon" => "caret_down"
 				]);
 			?>

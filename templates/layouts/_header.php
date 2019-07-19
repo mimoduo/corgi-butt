@@ -41,7 +41,8 @@
 
 									include_with("navigation/main.php", [
 										"modifier" => "lg",
-										"title" => "Site"
+										"title" => "Site",
+										"label" => "Header"
 									]);
 								?>
 								</div>
