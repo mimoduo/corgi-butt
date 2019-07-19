@@ -23,7 +23,8 @@
 		include "_head.php";
 	?>
 	<body class="<?=implode(" ", $body_classes)?>">
-		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=<?=$site["tag_manager_id"]?>" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T8CJRLG" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+			
 		<a class="skip_link" id="skip_to_content" href="#page_main_content">Skip to Main Content</a>
 
 		<div class="page_wrapper">
