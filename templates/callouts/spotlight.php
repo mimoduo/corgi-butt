@@ -23,7 +23,7 @@
               </div>
             </div>
             <footer class="spotlight_links">
-					<a class="spotlight_link" href="mimoduo@gmail.com">
+					<a class="spotlight_link" href="mailto:mimoduo@gmail.com">
 						<span class="spotlight_link_inner">
 							<span class="spotlight_link_label">Your Idea, Our Email</span>
 							<span class="spotlight_link_icon" aria-hidden="true">
