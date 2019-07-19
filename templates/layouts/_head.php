@@ -28,8 +28,8 @@
 	<?php BigTreeCMS::drawHeadTags($site["title"]); ?>
 
 	<!-- Insert Fonts Here -->
-	<link rel="stylesheet" href="<?=STATIC_ROOT?>css/site.css?<?=filemtime(SITE_ROOT."css/site.css")?>">
-	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Poppins:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="<?=STATIC_ROOT?>css/site.css?<?=filemtime(SITE_ROOT."css/site.css")?>" media="all">
+	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Poppins:400,700" rel="stylesheet" media="all">
 
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
