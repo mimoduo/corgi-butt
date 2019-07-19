@@ -80,9 +80,19 @@
 .spotlight_header {}
 
 .spotlight_title {
-  @include h1;
+  @include title;
 
+	font-size: 30px;
+	line-height: (70 / 60);
   margin: 0 0 10px;
+
+	@media #{$min_md} {
+		font-size: 44px;
+  }
+  
+	@media #{$min_xl} {
+		font-size: 70px;
+	}
 }
 
 .spotlight_body {

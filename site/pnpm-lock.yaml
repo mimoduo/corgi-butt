@@ -11,8 +11,8 @@ devDependencies:
   gulp-folder-index: 0.0.3
   gulp-html-beautify: 1.0.1
   gulp-if: 2.0.2
-  gulp-imagemin: 5.0.3
-  gulp-jshint: 2.1.0
+  gulp-imagemin: 5.0.3_gulp@4.0.0
+  gulp-jshint: 2.1.0_jshint@2.10.1
   gulp-newer: 1.4.0
   gulp-postcss: 8.0.0
   gulp-real-favicon: 0.3.2
@@ -32,7 +32,7 @@ devDependencies:
   require-reload: 0.2.2
   what-input: 5.1.3
   yargs: 13.2.1
-lockfileVersion: 5
+lockfileVersion: 5.1
 packages:
   /@mrmlnc/readdir-enhanced/2.2.1:
     dependencies:
@@ -3141,10 +3141,11 @@ packages:
       node: '>= 0.10.0'
     resolution:
       integrity: sha1-pJe351cwBQQcqivIt92jyARE1ik=
-  /gulp-imagemin/5.0.3:
+  /gulp-imagemin/5.0.3_gulp@4.0.0:
     dependencies:
       chalk: 2.4.2
       fancy-log: 1.3.3
+      gulp: 4.0.0
       imagemin: 6.1.0
       plugin-error: 1.0.1
       plur: 3.0.1
@@ -3162,8 +3163,9 @@ packages:
       gulp: '>=4'
     resolution:
       integrity: sha512-bKJMix4r6EQPVV2u8sUglw6Rn0PSp6i70pSK2ECN7j0dRy0w/Lz5SBbynY3MfGBZ0cTMZlaUq+6LyKlZgP74Ew==
-  /gulp-jshint/2.1.0:
+  /gulp-jshint/2.1.0_jshint@2.10.1:
     dependencies:
+      jshint: 2.10.1
       lodash: 4.17.11
       minimatch: 3.0.4
       plugin-error: 0.1.2
