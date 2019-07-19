@@ -1,3 +1,4 @@
 RewriteEngine On
 RewriteRule ^$ site/ [L]
 RewriteRule (.*) site/$1 [L]
+Redirect 301 http://www.corgibutt.studio/ http://corgibutt.studio/
