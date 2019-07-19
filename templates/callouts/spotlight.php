@@ -4,7 +4,8 @@
 			include_with("background-video.php", [
 				"class" => "spotlight_poster",
 				"poster" => $image,
-				"video" => $video
+				"video" => $video,
+				"alt" => "A corgi playing developer on a laptop and shaking its butt"
 			]);
 		?>
 	</div>
@@ -14,7 +15,7 @@
         <div class="spotlight_inner">
           <div class="spotlight_content">
             <header class="spotlight_header">
-              <h2 class="spotlight_title"><?=$title?></h2>
+              <h1 class="spotlight_title"><?=$title?></h1>
             </header>
             <div class="spotlight_body">
               <div class="spotlight_description">
@@ -22,17 +23,17 @@
               </div>
             </div>
             <footer class="spotlight_links">
-							<a class="spotlight_link" href="mimoduo@gmail.com">
-								<span class="spotlight_link_inner">
-									<span class="spotlight_link_label">Your Idea, Our Email</span>
-									<span class="spotlight_link_icon" aria-hidden="true">
-										<?=icon("mail")?>
-									</span>
-									<span class="spotlight_link_background" aria-hidden="true">
-										<?=icon("paw")?>
-									</span>
-								</span>
-							</a>
+					<a class="spotlight_link" href="mimoduo@gmail.com">
+						<span class="spotlight_link_inner">
+							<span class="spotlight_link_label">Your Idea, Our Email</span>
+							<span class="spotlight_link_icon" aria-hidden="true">
+								<?=icon("mail")?>
+							</span>
+							<span class="spotlight_link_background" aria-hidden="true">
+								<?=icon("paw")?>
+							</span>
+						</span>
+					</a>
             </footer>
           </div>
         </div>
