@@ -9,7 +9,7 @@
 ?>
 <nav class="js-main-nav main_nav<?php if (!empty($modifier)) { ?> js-main-nav-<?=$modifier?> main_nav_<?=$modifier?><?php } ?>" aria-label="Site" itemscope itemtype="http://schema.org/SiteNavigationElement">
 	<div class="main_nav_header">
-		<h2 class="main_nav_title">Site Navigation</h2>
+		<h2 class="main_nav_title">Site Navigation<?php if (!empty($label)) { echo " " . $label; } ?></h2>
 	</div>
 	<ul class="main_nav_list" aria-label="Site Navigation">
 		<?php
