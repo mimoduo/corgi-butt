@@ -1,5 +1,5 @@
 # www.robotstxt.org/
-Sitemap: //corgibutt.studio/sitemap.xml
+Sitemap: http://corgibutt.studio/sitemap.xml
 
 # Allow crawling of all content
 User-agent: *
