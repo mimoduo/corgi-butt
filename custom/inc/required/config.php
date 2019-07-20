@@ -1,7 +1,7 @@
 <?php
 	$site = [
 		"title" => "Corgi Butt",
-		"schema_type" => "Organization",
+		"schema_type" => "LocalBusiness",
 		"cse_key" => "",
 		"tag_manager_id" => "",
 		"og_image_fallback" => null,

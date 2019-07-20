@@ -1,4 +1,4 @@
-<div class="meta" itemscope itemtype="http://schema.org/{{ vars.schemaType }}">
+<div class="meta" itemscope itemtype="http://schema.org/<?=$site["schema_type"]?>">
 	<div class="logo logo_footer" itemscope itemtype="http://schema.org/<?=$site["schema_type"]?>">
 		<a class="logo_link" itemprop="url" href="<?=$link?>">
 			<span class="logo_link_icon">
