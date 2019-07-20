@@ -5,10 +5,10 @@
 				<div class="directory_body">
 					<ul class="directory_items" role="list" itemscope itemtype="http://schema.org/ItemList">
 						<?php
-							foreach ($items as $item) {
+							foreach ($items as $key => $item) {
 						?>
 						<li class="directory_item" itemscope itemprop="itemListElement" itemtype="http://schema.org/ListItem">
-							<meta itemprop="position" content="{{ loop.index }}">
+							<meta itemprop="position" content="<?=$key?>">
 							<div class="directory_item_inner" itemscope itemtype="http://schema.org/Person">
 								<?php
 									if (!empty($item["image"])) {
