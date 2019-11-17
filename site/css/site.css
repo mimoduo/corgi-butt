@@ -3761,7 +3761,7 @@ button {
   position: relative;
   margin-top: -70px;
   margin-bottom: 30px; }
-  @media screen and (min-width: 740px) {
+  @media screen and (min-width: 980px) {
     .logo_footer {
       display: inline-block; } }
 
@@ -3981,9 +3981,6 @@ button {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 10px; }
-  @media screen and (min-width: 740px) {
-    .meta_detail {
-      margin: 0 20px; } }
   @media screen and (min-width: 980px) {
     .meta_detail {
       margin: 0 30px; } }
