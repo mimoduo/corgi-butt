@@ -5921,6 +5921,49 @@ button {
   display: block;
   text-align: center; }
 
+.timeline_rocket {
+  display: inline-block; }
+  .timeline_label:hover .timeline_rocket,
+  .timeline_label:focus .timeline_rocket {
+    -webkit-animation: launch 1s forwards;
+            animation: launch 1s forwards; }
+
+@-webkit-keyframes launch {
+  2%,
+  4%,
+  6%,
+  8% {
+    -webkit-transform: translate(-2px, 0);
+            transform: translate(-2px, 0); }
+  3%,
+  5%,
+  7%,
+  9% {
+    -webkit-transform: translate(2px, 0);
+            transform: translate(2px, 0); }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(300px, -300px);
+            transform: translate(300px, -300px); } }
+
+@keyframes launch {
+  2%,
+  4%,
+  6%,
+  8% {
+    -webkit-transform: translate(-2px, 0);
+            transform: translate(-2px, 0); }
+  3%,
+  5%,
+  7%,
+  9% {
+    -webkit-transform: translate(2px, 0);
+            transform: translate(2px, 0); }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(300px, -300px);
+            transform: translate(300px, -300px); } }
+
 .timeline_items {
   position: relative;
   list-style: none;

@@ -51,7 +51,7 @@
 								}
 							?>
             </ol>
-            <span class="timeline_label">Your New Website has Launched 🚀</span>
+            <span class="timeline_label">Your New Website has Launched <span class="timeline_rocket">🚀</span></span>
           </div>
         </div>
         <footer class="timeline_footer">
