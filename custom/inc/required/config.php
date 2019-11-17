@@ -13,7 +13,7 @@
 			"city" => "Lutherville Timonium",
 			"state" => "",
 			"zip" => "",
-			"phone" => "",
+			"phone" => "443-824-3742",
 			"fax" => "",
 			"email" => "mimoduo@gmail.com"
 		]

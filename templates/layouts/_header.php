@@ -51,7 +51,7 @@
 									<a class="header_email_link" href="mailto:mimoduo@gmail.com">
 										<span class="header_email_link_inner">
 											<span class="header_email_link_icon"><?=icon("mail")?></span>
-											<span class="header_email_link_label">Email Us</span>
+											<span class="header_email_link_label">Contact Us</span>
 										</span>
 									</a>
 									<?php

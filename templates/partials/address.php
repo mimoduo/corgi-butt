@@ -31,6 +31,10 @@
 		<?php
 			}
 		?>
+		<span class="meta_detail meta_detail_email">
+			<span class="meta_detail_icon"><?=icon("phone")?></span>
+			<a class="meta_detail_label meta_detail_label_phone" href="mailto:<?=$phone?>" itemprop="phone"><?=$phone?></a>
+		</span>
 		<span class="meta_detail">
 			<div class="copyright">
 				<p class="copyright_info">&copy; <span class="copyright_holder" itemprop="copyrightHolder" itemscope="" itemtype="http://schema.org/<?=$site["schema_type"]?>"><?=$site["title"]?></span> <span <span class="copyright_year" itemprop="copyrightYear"><?=date("Y")?></span></p>
