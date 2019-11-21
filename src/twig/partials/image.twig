@@ -1,0 +1,10 @@
+{#
+	{% include par ~ "image.twig" with {
+		class: "media",
+		itemprop: "",
+		image: item.image,
+		dimension: img.wide.med
+	} %}
+#}
+
+<img class="{{ class }}_image" src="{{ image }}" alt="">

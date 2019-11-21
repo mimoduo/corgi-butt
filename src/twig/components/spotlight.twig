@@ -1,0 +1,29 @@
+<div class="spotlight">
+	<div class="spotlight_media">
+		{% include par ~ "image.twig" with {
+      class: "spotlight",
+      image: image
+    } %}
+	</div>
+  <div class="spotlight_wrapper">
+    <div class="fs-row">
+      <div class="fs-cell">
+        <div class="spotlight_inner">
+          <div class="spotlight_content">
+            <header class="spotlight_header">
+              <h2 class="spotlight_title">{{ title }}</h2>
+            </header>
+            <div class="spotlight_body">
+              <div class="spotlight_description">
+                <p>{{ description }}</p>
+              </div>
+            </div>
+            <footer class="spotlight_links">
+              {{ site.button("spotlight", "Your Idea, Our Mission", "mail")}}
+            </footer>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

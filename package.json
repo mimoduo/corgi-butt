@@ -1,0 +1,261 @@
+{
+  "name": "corgi-butt-websites",
+  "version": "1.0.0",
+  "description": "Site description.",
+  "author": "Fastspot",
+  "repository": {
+    "type": "git",
+    "url": "#"
+  },
+  "img": {
+    "ultrawide": {
+      "xxsml": "300x129",
+      "xsml": "500x214",
+      "sml": "740x317",
+      "med": "980x420",
+      "lrg": "1220x523",
+      "xlrg": "1440x617"
+    },
+    "wide": {
+      "xxsml": "300x169",
+      "xsml": "500x282",
+      "sml": "740x416",
+      "med": "980x552",
+      "lrg": "1220x686",
+      "xlrg": "1440x810"
+    },
+    "full": {
+      "xxsml": "300x225",
+      "xsml": "500x375",
+      "sml": "740x555",
+      "med": "980x735",
+      "lrg": "1220x915",
+      "xlrg": "1440x1080"
+    },
+    "square": {
+      "thumb": "100x100",
+      "xxsml": "300x300",
+      "xsml": "500x500",
+      "sml": "740x740",
+      "med": "980x980"
+    },
+    "classic": {
+      "xxsml": "300x200",
+      "xsml": "500x334",
+      "sml": "740x494",
+      "med": "980x654",
+      "lrg": "1220x814",
+      "xlrg": "1440x960"
+    },
+    "portraitFull": {
+      "xxsml": "225x300",
+      "xsml": "375x500",
+      "sml": "555x740",
+      "med": "735x980",
+      "lrg": "915x1220",
+      "xlrg": "1080x1440"
+    },
+    "portraitClassic": {
+      "xxsml": "200x300",
+      "xsml": "334x500",
+      "sml": "494x740",
+      "med": "654x980",
+      "lrg": "814x1220",
+      "xlrg": "960x1440"
+    }
+  },
+  "urls": [
+    {
+      "name": "trello",
+      "url": "#"
+    },
+    {
+      "name": "invision",
+      "url": "#"
+    },
+    {
+      "name": "dev",
+      "url": "#"
+    }
+  ],
+  "vars": {
+    "namespace": "fs",
+    "name": "Corgi Butt",
+    "images": "fastspot",
+    "domain": "example.dev.fastspot.com/site",
+    "description": "",
+    "schemaType": "Organization",
+    "twitter": "TwitterName",
+    "color": "",
+    "filters": [
+      "landing",
+      "listing",
+      "detail"
+    ],
+    "cseKey": "011737558837375720776:mbfrjmyam1g",
+    "idBoardTrello": "59918e10a8c7276a1754a904"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "formstone": "^1.4.16",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-beautify": "^3.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-sass-glob": "^1.1.0",
+    "gulp-svg-sprite": "^1.5.0",
+    "gulp-twig": "^1.2.0",
+    "imagemin": "^7.0.0",
+    "imagemin-mozjpeg": "^8.0.0",
+    "imagemin-pngquant": "^8.0.0",
+    "normalize.css": "^8.0.1",
+    "remove-directory": "^1.0.0",
+    "through2": "^3.0.1",
+    "uglify-js": "^3.6.2",
+    "what-input": "^5.2.6"
+  },
+  "js": {
+    "site.js": []
+  },
+  "links": {
+    "mainNav": [
+      {
+        "name": "About",
+        "href": "page-about.html"
+      },
+      {
+        "name": "Pricing",
+        "href": "page-pricing.html"
+      },
+      {
+        "name": "Contact",
+        "href": "page-contact.html"
+      }
+    ],
+    "secondaryNav": [
+      {
+        "name": "Email",
+        "href": "#",
+        "icon": "mail"
+      }
+    ],
+    "utilityNav": [],
+    "quickNav": [],
+    "footerNav": [
+      "Footer Link",
+      "Footer Link"
+    ],
+    "socialNav": [
+      {
+        "modifier": "",
+        "icon": "facebook",
+        "name": "Facebook",
+        "href": "//www.facebook.com"
+      },
+      {
+        "modifier": "",
+        "icon": "twitter",
+        "name": "Twitter",
+        "href": "//www.twitter.com"
+      },
+      {
+        "modifier": "",
+        "icon": "instagram",
+        "name": "Instagram",
+        "href": "//www.instagram.com"
+      },
+      {
+        "modifier": "",
+        "icon": "youtube",
+        "name": "Youtube",
+        "href": "//www.youtube.com"
+      },
+      {
+        "modifier": "",
+        "icon": "linkedin",
+        "name": "Linkedin",
+        "href": "//www.linkedin.com"
+      }
+    ],
+    "subNav": [
+      {
+        "modifier": "",
+        "href": "../",
+        "name": "Sitemap",
+        "children": ""
+      },
+      {
+        "modifier": "",
+        "href": "dev-html.html",
+        "name": "HTML Guide",
+        "children": ""
+      },
+      {
+        "modifier": "",
+        "href": "page-404.html",
+        "name": "404",
+        "children": ""
+      },
+      {
+        "modifier": "",
+        "href": "page-form-builder.html",
+        "name": "Form Builder",
+        "children": ""
+      },
+      {
+        "modifier": "",
+        "href": "page-search.html",
+        "name": "Search",
+        "children": ""
+      }
+    ]
+  },
+  "colors": {
+    "primary": {
+      "black": "#000",
+      "white": "#fff",
+      "jade": "#187B79"
+    },
+    "secondary": {
+      "blue": "#006bc0",
+      "red": "#D31243"
+    }
+  },
+  "fontsService": "fonts.com",
+  "fonts": [
+    {
+      "name": "Futura",
+      "reference": "Futura",
+      "styles": [
+        {
+          "type": "bold",
+          "weight": 700
+        },
+        {
+          "type": "normal",
+          "weight": 400
+        }
+      ]
+    },
+    {
+      "name": "Avenir",
+      "reference": "Avenir",
+      "styles": [
+        {
+          "type": "bold",
+          "weight": 700
+        },
+        {
+          "type": "normal",
+          "weight": 400
+        },
+        {
+          "type": "normal",
+          "style": "italic",
+          "weight": 400
+        }
+      ]
+    }
+  ]
+}

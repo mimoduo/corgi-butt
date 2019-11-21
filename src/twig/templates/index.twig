@@ -1,0 +1,82 @@
+{% extends "_base.twig" %}
+
+{% block page %}
+	{% set page = {
+		metaImage: "/images/temp/social-wide.jpg",
+		metaImageWidth: "1220",
+		metaImageHeight: "686",
+		metaCard: "summary_large_image",
+		title: "Home",
+		layout: "home"
+	} %}
+{% endblock %}
+
+{% block full_width_callouts %}
+	{% include full ~ "spotlight.twig" with {
+		image: "/images/spotlight.jpg",
+		title: "We Create Awesome Websites",
+		description: "Corgi Butt is a small team focused on building Maryland websites to solve local business solutions through our client's engagement, creative designs, and leading class development."
+	} %}
+	
+	{% include full ~ "timeline.twig" with {
+		title: "How We Work With You",
+		caption: "Creating an awesome website is a big undertaking and often misunderstood being. To make it less daunting, we work with you, step by step, for us to roll forward with a website you can be proud of.",
+		label: "The Beginning",
+		items: [
+			{
+				image: 1,
+				title: "We Chat",
+				caption: "The first step is getting to know you and us! During our chat, we'll listen to your ideas and turn them into an actionable plan - whether that's a simple design refresh or a completely new website."
+			},
+			{
+				image: 2,
+				title: "We Design",
+				caption: "With a project plan on paper, we design a website that captures the best parts of your brand and embodies a thoughtful approach to user interfaces."
+			},
+			{
+				image: 3,
+				title: "We Develop",
+				caption: "We tailor every inch of your new design for any screen imaginable across the web. We consider smooth performance, usability, accessibility, and search engine optimization to be the paramount of web development and user engagement."
+			},
+			{
+				image: 5,
+				title: "We Launch",
+				caption: "Your site has to live somewhere, right? Whether you're currently hosting your website or have yet to host a website, we'll work with you to get your site up and running."
+			}
+		],
+		end: "Your New Website has Launched <span class='timeline_rocket'>🚀</span>"
+	} %}
+
+	{% include full ~ "wysiwyg.twig" with {
+		title: "We Have Your Beanie Buns Covered",
+		content: "<p class='intro'>We're a small team dedicated to making the Maryland website landscape a rewarding place for our community and an engaging environment for our clients. Whether you're a small mom and pop shop or a large company looking to hire a few freelancers, we have you covered.</p>"
+	} %}
+
+	{% include full ~ "directory.twig" with {
+		items: [
+		{
+			image: "/images/bryan.jpg",
+			name: "Bryan Stoner",
+			title: "Founder, Designer, Developer",
+			description: "Ever since I was a kid I drew crazy monsters, robot fortresses, and comic book characters. I'd even get myself into some sweet lego, kinect, and gundam model kits. Building websites stuck like crazy, just as my pasttimes did, when I started my career 7 years ago."
+		},
+		{
+			name: "Brandon Choi",
+			title: "Developer",
+			description: "Right from the get go I've been into martial arts, video games, and superheroes. I received my black belt in Taekwondo during high school and my black belt in Jujitsu in college. I graduated from UMBC in mechanical engineering and I've been studying web development for the past couple of years."
+		},
+		{
+			image: "/images/curry.jpg",
+			name: "Curry",
+			title: "Champion Corgi",
+			description: "I am the ruler of all the fur in the world. Fluff master at heart, goofball deep down. I like to eat Bryan's socks, run around in circles, and swipe any popcorn that hits the floor."
+		}
+		]
+	} %}
+
+	{% include full ~ "wysiwyg.twig" with {
+		title: "Competitive Rates",
+		content: "<p class='intro'>Picking a team to create your new website is a hard choice to make. We take pride in offering <strong>digital agency quality at the price of a freelancer</strong>. But, as a rule of thumb, we aim to build strong performing sites within 10 - 20 hours ($800 - $1600).</p><p>Our rate is&nbsp;<strong>$80 an hour.</strong></p>",
+		link: "Get in Touch"
+	} %}
+{% endblock %}

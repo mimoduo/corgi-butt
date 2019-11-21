@@ -1,9 +1,0 @@
-.wysiwyg_button_link {
-  @include button_ghost(
-    $background: $orange,
-    $color: $dark
-  );
-  @include button_inline;
-
-  margin-top: 10px;
-}

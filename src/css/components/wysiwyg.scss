@@ -1,0 +1,14 @@
+.wysiwyg_block {
+	@include padded_xl;
+
+	background: #fff;
+	border-top: 6px solid $orange;
+}
+
+.wysiwyg_link {
+	@include button_ghost(
+		$background: $orange,
+		$color: $dark
+	);
+	@include button_inline;
+}

@@ -1,0 +1,26 @@
+{#
+	{% include full ~ "wysiwyg.twig" with {
+		content: '<p>Lorem ipsum</p>'
+	} %}
+#}
+
+<!-- WYSIWYG -->
+<div class="wysiwyg_block">
+	<div class="fs-row">
+		<div class="fs-cell fs-lg-10">
+			<div class="wysiwyg_block_inner">
+				<h2 class="page_title">
+                    <span class="page_title_icon" aria-hidden="true">{{ site.icon("paw") }}</span>
+                    <span class="page_title_label">{{ title }}</span>
+                </h2>
+				<div class="typography">
+					{{ content }}
+				</div>
+				{% if link %}
+					{{ site.button("wysiwyg", link, "mail")}}
+				{% endif %}
+			</div>
+		</div>
+	</div>
+</div>
+<!-- END: WYSIWYG -->
