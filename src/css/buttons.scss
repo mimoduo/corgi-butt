@@ -64,8 +64,8 @@ button {
 }
 
 @mixin button_ghost(
-	$background: transparent,
-	$color: #fff
+	$background: $orange,
+    $color: $dark
 ) {
 	position: relative;
 	z-index: 2;

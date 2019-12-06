@@ -24,6 +24,10 @@
 	line-height: (60 / 50);
 
 	@media #{$min_md} {
+		font-size: 40px;
+	}
+
+	@media #{$min_lg} {
 		font-size: 50px;
 	}
 }

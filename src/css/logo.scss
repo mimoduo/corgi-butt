@@ -7,12 +7,6 @@
 .logo_header {
 	position: relative;
 	z-index: 8;
-
-	margin-bottom: -36px;
-
-	@media #{$min_sm} {
-		margin-bottom: -48px;
-	}
 }
 
 .logo_footer {
@@ -45,12 +39,12 @@
 	display: inline-block;
 
 	.logo_header & {
-		max-width: 100px;
+		max-width: 120px;
 
 		margin-right: 10px;
 
 		@media #{$min_xl} {
-			max-width: 180px;
+			max-width: 200px;
 
 			margin-right: 20px;
 		}
@@ -60,13 +54,15 @@
 		max-width: 200px;
 
 		@media #{$min_lg} {
-			max-width: 300px;
+			max-width: 360px;
 		}
 	}
 }
 
 .logo_link_image {
 	width: 100%;
+
+	filter: drop-shadow(0 4px 10px rgba($orange, .5));
 }
 
 .logo_link_label {
@@ -76,17 +72,14 @@
 	text-shadow: 1px 1px 0 $orange;
 
 	.logo_header & {
-		font-size: 20px;
-		margin-bottom: 12px;
+		font-size: 24px;
 
 		@media screen and (min-width: 600px) {
-			font-size: 25px;
-			margin-bottom: 16px;
+			font-size: 36px;
 		}
 
 		@media #{$min_xl} {
-			font-size: 36px;
-			margin-bottom: 12px;
+			font-size: 60px;
 		}
 	}
 
