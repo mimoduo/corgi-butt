@@ -1023,16 +1023,16 @@ button {
 .logo_link_label {
   font-family: "Permanent Marker", sans-serif;
   font-weight: 400;
+  font-size: 26px;
+  line-height: 1.2;
   color: inherit;
   text-shadow: 1px 1px 0 #FF9E00; }
-  .logo_header .logo_link_label {
-    font-size: 24px; }
-    @media screen and (min-width: 600px) {
-      .logo_header .logo_link_label {
-        font-size: 36px; } }
-    @media screen and (min-width: 1220px) {
-      .logo_header .logo_link_label {
-        font-size: 60px; } }
+  @media screen and (min-width: 740px) {
+    .logo_link_label {
+      font-size: 40px; } }
+  @media screen and (min-width: 980px) {
+    .logo_link_label {
+      font-size: 50px; } }
   .logo_footer .logo_link_label {
     position: absolute;
     top: 50%;
@@ -1489,6 +1489,26 @@ button {
 .calculator_result_item_value {
   color: #00825A; }
 
+.codepen_block {
+  margin-top: 60px;
+  margin-bottom: 60px; }
+  @media screen and (min-width: 740px) {
+    .codepen_block {
+      margin-top: 70px; } }
+  @media screen and (min-width: 980px) {
+    .codepen_block {
+      margin-top: 80px; } }
+  @media screen and (min-width: 740px) {
+    .codepen_block {
+      margin-bottom: 70px; } }
+  @media screen and (min-width: 980px) {
+    .codepen_block {
+      margin-bottom: 80px; } }
+
+.cp_embed_wrapper {
+  border: 10px solid #fff;
+  margin: 10px 0; }
+
 .directory {
   margin-top: 60px;
   margin-bottom: 60px; }
@@ -1608,6 +1628,48 @@ button {
       line-height: 1.55556; } }
   .directory_item_description p {
     margin: 0; }
+
+.image_pair {
+  margin-top: 60px;
+  margin-bottom: 60px; }
+  @media screen and (min-width: 740px) {
+    .image_pair {
+      margin-top: 70px; } }
+  @media screen and (min-width: 980px) {
+    .image_pair {
+      margin-top: 80px; } }
+  @media screen and (min-width: 740px) {
+    .image_pair {
+      margin-bottom: 70px; } }
+  @media screen and (min-width: 980px) {
+    .image_pair {
+      margin-bottom: 80px; } }
+
+@media screen and (min-width: 500px) {
+  .image_pair_inner {
+    display: flex;
+    margin: 0 -10px; } }
+
+.image_pair_figure {
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column-reverse; }
+  @media screen and (min-width: 500px) {
+    .image_pair_figure {
+      width: 50%;
+      padding: 0 10px; } }
+
+.image_pair_image {
+  width: 100%;
+  display: block; }
+
+.image_pair_caption {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-bottom: 10px; }
 
 /* ==========================================================================
 	Spotlight

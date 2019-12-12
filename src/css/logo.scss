@@ -66,22 +66,10 @@
 }
 
 .logo_link_label {
-	@include title;
+	@include h2;
 
 	color: inherit;
 	text-shadow: 1px 1px 0 $orange;
-
-	.logo_header & {
-		font-size: 24px;
-
-		@media screen and (min-width: 600px) {
-			font-size: 36px;
-		}
-
-		@media #{$min_xl} {
-			font-size: 60px;
-		}
-	}
 
 	.logo_footer & {
 		position: absolute;

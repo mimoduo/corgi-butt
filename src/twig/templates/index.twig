@@ -48,6 +48,26 @@
 	} %}
 
 	{% include full ~ "wysiwyg.twig" with {
+		title: "Our Professional Chops",
+		content: "<p class='intro'>We're new to the block but we already have some designs under our belt. We aim for modern designs that highlight elements that engage your audience without overwhelming them. Plus we have crazy fun code pens too, like that happy corgi down below!</p>"
+	} %}
+
+	{% include full ~ "image-pair.twig" with {
+		left: {
+			caption: "Jennifer Stoner Interiors",
+			image: "jennifer-stoner-interiors",
+			alt: "Jennifer Stoner Interiors redesign. Her patterned logo is cutout into the featured image."
+		},
+		right: {
+			caption: "Senneth Knot",
+			image: "senneth-knot",
+			alt: "Senneth Knot redesign. Three images of fabrics capitalize side by side their craft."
+		}
+	} %}
+
+	{% include full ~ "codepen.twig" %}
+
+	{% include full ~ "wysiwyg.twig" with {
 		title: "We Have Your Beanie Buns Covered",
 		content: "<p class='intro'>We're a small team dedicated to making the Maryland website landscape a rewarding place for our community and an engaging environment for our clients. Whether you're a small mom and pop shop or a large company looking to hire a few freelancers, we have you covered.</p>"
 	} %}
@@ -76,7 +96,7 @@
 
 	{% include full ~ "wysiwyg.twig" with {
 		title: "Competitive Rates",
-		content: "<p class='intro'>Picking a team to create your new website is a hard choice to make. We take pride in offering <strong>digital agency quality at the price of a single freelancer</strong>. And, as a rule of thumb, we aim to build strong performing sites within 10 - 20 hours ($800 - $1600).</p><p>Our rate is&nbsp;<strong>$80 an hour.</strong></p>",
+		content: "<p class='intro'>Picking a team to create and build your website is a hard choice to make. We take pride in offering <strong>digital agency quality at the price of a single freelancer</strong>. And, as a rule of thumb, we aim to build strong performing sites within 10 - 20 hours ($800 - $1600).</p><p>Our rate is&nbsp;<strong>$80 an hour.</strong></p>",
 		link: "Get in Touch"
 	} %}
 {% endblock %}
