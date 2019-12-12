@@ -1658,10 +1658,10 @@ button {
     .image_pair_figure {
       width: 50%;
       padding: 0 10px; } }
-  .image_pair_figure:not(:first-child) {
+  .image_pair_figure:not(:last-child) {
     margin-bottom: 20px; }
     @media screen and (min-width: 500px) {
-      .image_pair_figure:not(:first-child) {
+      .image_pair_figure:not(:last-child) {
         margin-bottom: 0; } }
 
 .image_pair_image {
