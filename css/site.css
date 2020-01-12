@@ -1505,9 +1505,18 @@ button {
     .codepen_block {
       margin-bottom: 80px; } }
 
+@media screen and (min-width: 980px) {
+  .codepen_block_inner {
+    display: flex;
+    margin: 0 -10px; } }
+
 .cp_embed_wrapper {
   border: 10px solid #fff;
   margin: 10px 0; }
+  @media screen and (min-width: 980px) {
+    .cp_embed_wrapper {
+      width: 50%;
+      margin: 0 10px; } }
 
 .directory {
   margin-top: 60px;

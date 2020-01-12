@@ -2,7 +2,21 @@
     @include margined_lg;
 }
 
+.codepen_block_inner {
+
+    @media #{$min_lg} {
+        display: flex;
+        margin: 0 -10px;
+    }
+}
+
 .cp_embed_wrapper {
     border: 10px solid #fff;
     margin: 10px 0;
+
+    @media #{$min_lg} {
+        width: 50%;
+
+        margin: 0 10px;
+    }
 }
